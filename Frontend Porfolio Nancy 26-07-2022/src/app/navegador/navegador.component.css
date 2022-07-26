@@ -1,0 +1,38 @@
+nav{
+    padding: 0;
+    margin:2px 2px;
+}
+h1#Bienvenido{
+    position: absolute;
+    right:35%;
+    bottom:4%;
+    top:8%;
+    font-family: 'Tangerine', cursive;
+  font-size: 50px;
+}
+button{
+    position:absolute;
+    bottom:22%;
+    right:1%;
+   
+}
+
+ 
+img#facebook{
+    position: absolute;
+    right:8%;
+    top:25%;
+    }
+
+img#instagram{
+position:absolute;
+right:11.9%;
+width:4%;
+height:52%;
+top:25%;
+}
+img#github{
+    position:absolute;
+    right: 16.5%;
+    top:25%;
+}

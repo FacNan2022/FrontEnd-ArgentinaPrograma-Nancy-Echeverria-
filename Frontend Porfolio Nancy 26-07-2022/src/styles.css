@@ -1,0 +1,52 @@
+
+
+
+.mat-card{
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    margin:6px;
+    border-radius: 6px;
+    padding:6px 5px;
+    z-index: 1;
+}
+
+div#portada{
+    width:100%;
+    height: 100%;
+    position: relative;
+    border-radius :32px;
+    }
+    div#video{
+        width:100%;
+    }
+    video{
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+    }
+    
+    div#foto-perfil{
+        width: 100%;
+        height: 100%;
+    }
+    div#foto-perfil img{
+        width: 25%;
+        height:25%;
+        border-radius: 50%;
+        position:absolute;
+        top:60%;
+        left:2%;
+    }
+    .btn-edit#foto-perfil{
+        position: absolute;
+        left: 25%;
+       top:79%;
+        z-index:1;
+    }
+    .btn-edit#video{
+        position:absolute;
+        left:95%;
+        top:5%;
+        z-index: 1;
+    }
