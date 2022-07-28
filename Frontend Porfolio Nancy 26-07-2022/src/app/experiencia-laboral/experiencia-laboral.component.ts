@@ -24,7 +24,7 @@ export class ExperienciaLaboralComponent implements OnInit {
   }
 
   cargarExperiencia(): void{
-   this.sExperiencia.list().subscribe(data => {this.expe=data;})
+   this.sExperiencia.lista().subscribe(data => {this.expe=data;})
   
   }
   delete(id?: number){

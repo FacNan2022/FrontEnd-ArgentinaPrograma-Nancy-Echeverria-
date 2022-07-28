@@ -18,6 +18,8 @@ import { SkillHeadComponent } from './skill-head/skill-head.component';
 import { interceptorProvider } from './service/interceptor-service.service';
 import { NewExperienciaComponent } from './experiencia-laboral/new-experiencia.component';
 import { EditExperienciaComponent } from './experiencia-laboral/edit-experiencia.component';
+import { NewEducacionComponent } from './educacion/new-educacion.component';
+import { EditEducacionComponent } from './educacion/edit-educacion.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { EditExperienciaComponent } from './experiencia-laboral/edit-experiencia
     RegistroComponent,
     SkillHeadComponent,
     NewExperienciaComponent,
-    EditExperienciaComponent
+    EditExperienciaComponent,
+    NewEducacionComponent,
+    EditEducacionComponent
 
     
 

@@ -11,20 +11,20 @@ export class SExperienciaServiceService {
   expURL = 'http://localhost:8080/explab/';
 
   constructor(private httpClient: HttpClient) { }
-  public list ():Observable<Experiencia[]>{
+  public lista ():Observable<Experiencia[]>{
     return this.httpClient.get<Experiencia[]>(this.expURL + 'lista');
        
   }
   public detail(id: number): Observable<Experiencia>{
-    return this.httpClient.get<Experiencia>(this.expURL + 'detail/${id}');
+    return this.httpClient.get<Experiencia>(this.expURL + `detail/${id}`);
   }
   public save(experiencia: Experiencia): Observable<any>{
     return this.httpClient.post<any>(this.expURL + 'create', experiencia);
   }
   public update(id: number, experiencia: Experiencia):Observable<any>{
-    return this.httpClient.put<any>(this.expURL + 'update/${id}', experiencia);
+    return this.httpClient.put<any>(this.expURL + `update/${id}`, experiencia);
   }
   public delete(id: number): Observable<any>{
-    return this.httpClient.delete<any>(this.expURL + 'delete/${id}');
+    return this.httpClient.delete<any>(this.expURL + `delete/${id}`);
   } 
 }
