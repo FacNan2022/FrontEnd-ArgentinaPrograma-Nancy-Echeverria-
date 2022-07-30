@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Educacion } from '../Model/educacion';
+import { SEducacionService } from '../service/seducacion.service';
+
 
 @Component({
   selector: 'app-edit-educacion',
@@ -6,10 +10,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit-educacion.component.css']
 })
 export class EditEducacionComponent implements OnInit {
+  edu: Educacion =null;
 
-  constructor() { }
+  constructor(private sEducacion: SEducacionService, private activatedRouter: ActivatedRoute,
+    private router: Router) { }
 
   ngOnInit(): void {
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.sEducacion.detail(id).subscribe(
+      data =>{
+        this.edu = data;
+      }, err =>{
+        alert("Error al modificar educacion");
+        this.router.navigate(['']);
+      }
+    )
+  }
+
+  onUpdate(): void{
+    const id = this.activatedRouter.snapshot.params['id'];
+    this.sEducacion.update(id, this.edu).subscribe(
+      data => {
+        this.router.navigate(['']);
+      }, err =>{
+         alert("Error al modificar edicion");
+         this.router.navigate(['']);
+      }
+    )
   }
 
 }
+
+
