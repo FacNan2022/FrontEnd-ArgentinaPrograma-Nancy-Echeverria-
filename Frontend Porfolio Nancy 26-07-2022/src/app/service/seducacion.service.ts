@@ -7,6 +7,7 @@ import { Educacion } from '../Model/educacion';
   providedIn: 'root'
 })
 export class SEducacionService {
+  [x: string]: any;
   URL = 'http://localhost:8080/edu/';
 
   constructor(private httpClient: HttpClient) { }
@@ -30,6 +31,6 @@ export class SEducacionService {
   public delete(id: number): Observable<any>{
     return this.httpClient.delete<any>(this.URL + `delete/${id}`);
   }
-
+  
 
 }

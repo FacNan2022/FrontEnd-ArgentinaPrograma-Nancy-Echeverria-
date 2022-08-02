@@ -1,4 +1,6 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Educacion } from '../Model/educacion';
 import { SEducacionService } from '../service/seducacion.service';
 import { TokenService } from '../service/token.service';
@@ -23,6 +25,16 @@ export class EducacionComponent implements OnInit {
     }else{
       this.isLogged= false;
     }
+  }
+  public getEducacion():void{
+    this.sEducacion.lista().subscribe({
+      next:(Response: Educacion[])=>{
+      this.edu=Response;
+    },
+    error: function (error: HttpErrorResponse) {
+      alert(error.message);
+    }
+    })
   }
 
 

@@ -2,12 +2,12 @@
     <div id="portada">
         <div id="video">
           <video autoplay="autoplay" > <source src="../assets/36050907.mp4" type="video/mp4" ></video>
-          <div class="btn-edit" id="video"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+          <div *ngIf="isLogged" class="btn-edit" id="video"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
         </div>
     </div>
     <div id="foto-perfil">
         <img src="../assets/IMG_20210710_010534.jpg">
-        <div  class="btn-edit" id="foto-perfil"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+        <div *ngIf="isLogged" class="btn-edit" id="foto-perfil"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
     </div>
     <div id="info-perfil">
         <h1> {{persona.nombre}} {{persona.apellido}}</h1>

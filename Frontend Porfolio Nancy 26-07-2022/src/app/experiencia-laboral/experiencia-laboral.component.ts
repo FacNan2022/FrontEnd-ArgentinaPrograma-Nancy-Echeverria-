@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Experiencia } from '../Model/experiencia';
 import { SExperienciaServiceService } from '../service/sexperiencia-service.service';
 import { TokenService } from '../service/token.service';
@@ -10,8 +11,10 @@ import { TokenService } from '../service/token.service';
 })
 export class ExperienciaLaboralComponent implements OnInit {
   expe: Experiencia[] = [];
+  expLab: Experiencia =null;
 
-  constructor(private sExperiencia: SExperienciaServiceService, private tokenService: TokenService) { }
+  constructor(private sExperiencia: SExperienciaServiceService, private tokenService: TokenService, private activatedRouter: ActivatedRoute,
+    private router: Router) { }
   isLogged = false;
 
   ngOnInit(): void {
@@ -21,7 +24,11 @@ export class ExperienciaLaboralComponent implements OnInit {
     }else{
       this.isLogged = false;
     }
+    
+
   }
+ 
+
 
   cargarExperiencia(): void{
    this.sExperiencia.lista().subscribe(data => {this.expe=data;})
