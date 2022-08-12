@@ -1,7 +1,8 @@
 
 import { Component, OnInit } from '@angular/core';
 import{PersonaService} from 'src/app/service/personas.service';
-import { persona } from '../Model/persona.model';
+import { PersonaEdit } from '../Model/PersonaEdit';
+
 import { TokenService } from '../service/token.service';
 
 @Component({
@@ -13,7 +14,7 @@ import { TokenService } from '../service/token.service';
 export class EncabezadoComponent implements OnInit {
   isLogged= false;
   [x: string]: any;
-  persona: persona =new persona("","","");
+  persona: PersonaEdit =new PersonaEdit("","","");
 
   constructor(public personaService: PersonaService, private tokenService: TokenService) { }
 

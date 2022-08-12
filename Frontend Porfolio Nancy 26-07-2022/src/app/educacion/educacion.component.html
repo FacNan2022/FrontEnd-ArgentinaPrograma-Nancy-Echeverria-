@@ -2,16 +2,16 @@
 <div class="row">
     <h1>Educación</h1>
     <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" routerLink="/nuevaeducacion" *ngIf="isLogged" >
+        <button type="button" class="btn btn-dark" *ngIf="isLogged" routerLink="nuevaeducacion">
             Nueva Educación
         </button>
     </div>
 
     <div class="col lg 1"></div>
-    <div class="col-lg-11">
+    <div class="col-lg-11"  >
         <table class="table">
         <tbody>
-            <tr  d="main-container" *ngFor="let Educacion of edu">
+            <tr  *ngFor="let Educacion of edu">
                 <td>
                     <h2>{{Educacion.institucion}}</h2>
                 </td>
@@ -37,9 +37,11 @@
                         <i class="bi bi-trash-fill"></i> BORRAR</button>
                     
                 </td>
+               
             </tr>
         </tbody>
     </table>
     </div>
+
 </div>
 </div>

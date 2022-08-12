@@ -1,4 +1,4 @@
-export class persona{
+export class PersonaEdit{
 id?:number;
 nombre:string;
 apellido: string;

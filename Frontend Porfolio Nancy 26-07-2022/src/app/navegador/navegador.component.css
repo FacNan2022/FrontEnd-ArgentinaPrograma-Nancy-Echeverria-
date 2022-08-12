@@ -15,11 +15,14 @@ h1#Bienvenido {
 }
 
 img#argentinaPrograma {
-    border-radius: 50%;
+    border-radius: 10%;
 
 
 }
-
+.navbar navbar-light bg-light{
+    border-radius: 15%;
+  
+}
 
 button {
     position: absolute;
@@ -53,12 +56,13 @@ img#github {
 }
 
 img#linkedin {
-    border-radius: 50%;
+    border-radius: 25%;
     position: absolute;
-    right: 24%;
-    top: 30%;
+    right: 22%;
+    top: 25%;
 
 }
 div#navbarToggleExternalContent{
     position: relative;
 }
+

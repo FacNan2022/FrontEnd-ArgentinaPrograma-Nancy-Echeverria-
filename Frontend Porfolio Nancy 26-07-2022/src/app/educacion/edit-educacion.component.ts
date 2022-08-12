@@ -10,7 +10,7 @@ import { SEducacionService } from '../service/seducacion.service';
   styleUrls: ['./edit-educacion.component.css']
 })
 export class EditEducacionComponent implements OnInit {
-  edu: Educacion =null;
+  eduC: Educacion =null;
 
   constructor(private sEducacion: SEducacionService, private activatedRouter: ActivatedRoute,
     private router: Router) { }
@@ -19,7 +19,7 @@ export class EditEducacionComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id'];
     this.sEducacion.detail(id).subscribe(
       data =>{
-        this.edu = data;
+        this.eduC = data;
       }, err =>{
         alert("Error al modificar educacion");
         this.router.navigate(['']);
@@ -29,7 +29,7 @@ export class EditEducacionComponent implements OnInit {
 
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
-    this.sEducacion.update(id, this.edu).subscribe(
+    this.sEducacion.update(id, this.eduC).subscribe(
       data => {
         this.router.navigate(['']);
       }, err =>{

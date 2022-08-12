@@ -1,32 +1,34 @@
-<div class="container" *ngIf="edu">
-    <div class="row">
-        <div>
-            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-                <div class="form-group">
-                    <label for="institucion">Nombre de la institucion</label>
-                    <input type="text" class="form-control" id="institucion" name="institucion" [(ngModel)]="edu.institucion" required>
-                </div>
-                <div class="form-group">
-                    <label for="titulo">titulo</label>
-                    <input type="text" class="form-control" id="titulo" name="titulo"
-                        [(ngModel)]="edu.titulo" required>
-                </div>
-                <div class="form-group">
-                    <label for="orientacion">Nombre de la orientacion</label>
-                    <input type="text" class="form-control" id="orientacion" name="orientacion" [(ngModel)]="edu.orientacion" required>
-                </div>
-                <div class="form-group">
-                    <label for="fechaInicio">fecha de Inicio</label>
-                    <input type="text" class="form-control" id="fechaInicio" name="fechaInicio" [(ngModel)]="edu.fechaInicio" required>
-                </div>
-                <div class="form-group">
-                    <label for="fechaFinalizacion">fecha de Finalizacion</label>
-                    <input type="text" class="form-control" id="fechaFinalizacion" name="fechaFinalizacion"[(ngModel)]="edu.fechaFinalizacion" required/>
-                </div>
-                <button class="btn btn-primary">
-                    Actualizar
-                </button>
-            </form>
-        </div>
-        </div>
-        </div>
+<div class="card mat-card">
+    <div class="container" *ngIf="eduC">
+        <div class="row">
+            <div>
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="institucion">Nombre de la institucion</label>
+                        <input type="text" class="form-control" id="institucion" name="institucion" [(ngModel)]="eduC.institucion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="titulo">titulo</label>
+                        <input type="text" class="form-control" id="titulo" name="titulo"
+                            [(ngModel)]="eduC.titulo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="orientacion">Nombre de la orientacion</label>
+                        <input type="text" class="form-control" id="orientacion" name="orientacion" [(ngModel)]="eduC.orientacion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaInicio">fecha de Inicio</label>
+                        <input type="text" class="form-control" id="fechaInicio" name="fechaInicio" [(ngModel)]="eduC.fechaInicio" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaFinalizacion">fecha de Finalizacion</label>
+                        <input type="text" class="form-control" id="fechaFinalizacion" name="fechaFinalizacion"[(ngModel)]="eduC.fechaFinalizacion" required/>
+                    </div>
+                    <button class="btn btn-primary">
+                        Actualizar
+                    </button>
+                </form>
+            </div>
+            </div>
+            </div>
+</div>

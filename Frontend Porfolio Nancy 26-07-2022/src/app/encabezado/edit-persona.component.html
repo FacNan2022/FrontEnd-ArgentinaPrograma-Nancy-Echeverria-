@@ -1,0 +1,25 @@
+<div class="card mat-card" >
+    <div class="container" >
+        <div class="row" *ngIf="per" >
+    
+            
+           <div >
+           
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="per.nombre" required/>
+            </div>
+            <div class="form-group">
+                <label for="img">Descripcion de la tarea</label>
+                <input type="text" class="form-control" id="img" name="img"
+                    [(ngModel)]="per.img" required/>
+            </div>
+            <button class="btn btn-primary">
+                Actualizar
+            </button>
+        </form>
+    </div>
+    </div>
+    </div>
+</div>

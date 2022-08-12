@@ -1,6 +1,7 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Educacion } from '../Model/educacion';
 import { SEducacionService } from '../service/seducacion.service';
 import { TokenService } from '../service/token.service';
@@ -12,13 +13,17 @@ import { TokenService } from '../service/token.service';
 })
 export class EducacionComponent implements OnInit {
   edu: Educacion[]=[];
-
-  constructor(private sEducacion: SEducacionService, private tokenService: TokenService) { }
+  eduC: Educacion =null;
+  public deleteEducacion: Educacion | undefined;
+  public editEducacion: Educacion | undefined;
+  constructor(private sEducacion: SEducacionService, private tokenService: TokenService, private activatedRouter: ActivatedRoute,
+    private router: Router) { }
 
     isLogged= false;
 
   
   ngOnInit(): void {
+    
     this.cargarEducacion();
     if(this.tokenService.getToken()){
       this.isLogged= true;
@@ -26,19 +31,8 @@ export class EducacionComponent implements OnInit {
       this.isLogged= false;
     }
   }
-  public getEducacion():void{
-    this.sEducacion.lista().subscribe({
-      next:(Response: Educacion[])=>{
-      this.edu=Response;
-    },
-    error: function (error: HttpErrorResponse) {
-      alert(error.message);
-    }
-    })
-  }
 
-
-
+    //Echo con Matias
   cargarEducacion(): void{
     this.sEducacion.lista().subscribe(data => { this.edu = data;})
   }

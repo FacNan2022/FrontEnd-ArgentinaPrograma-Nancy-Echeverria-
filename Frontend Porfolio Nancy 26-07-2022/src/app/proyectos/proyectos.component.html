@@ -1,0 +1,41 @@
+<div class="card mat-card">
+    <div class="row">
+        <h1>Mis Proyectos</h1>
+        <div class="col-lg -2">
+            <button type="button" class="btn btn-dark" routerLink="/nuevoproyecto" *ngIf="isLogged">Nuevo Proyecto</button>
+        </div>
+    </div>
+    <div class="col lg 1">
+        <div class="col-lg-11">
+         <table class="table">
+             <tbody>
+                 <tr *ngFor="let Proyectos of pro">
+                     <td>
+                         <h2>{{Proyectos.nombre}}</h2>
+                     </td>
+                     <td>{{Proyectos.descripcion}}</td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+                     <td></td>
+
+                     <td> <img src="{{Proyectos.imagen}}" width="50%"></td>
+                     <td *ngIf= "isLogged"> 
+                         <button class="btn btn-light" routerLink="/editproyectos/{{Proyectos.id}}">
+                             <i class="bi bi-pencil-fill"></i>EDITAR</button> 
+                     </td>
+                     <td></td>
+                     <td *ngIf="isLogged">
+                         <button class="btn btn-danger" (click)="delete(Proyectos.id)">
+                             <i class="bi bi-trash-fill"></i> BORRAR</button>
+                         
+                     </td>
+                 </tr>
+             </tbody>
+         </table>
+         
+     
+     
+     </div>
