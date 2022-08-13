@@ -1,3 +1,4 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Skills } from '../Model/skills';
@@ -7,7 +8,21 @@ import { TokenService } from '../service/token.service';
 @Component({
   selector: 'app-skill-head',
   templateUrl: './skill-head.component.html',
-  styleUrls: ['./skill-head.component.css']
+  styleUrls: ['./skill-head.component.css'],
+  animations:[
+    trigger('enterState', [
+      state('void',style({
+        transform:'translateX(-100%)',
+        opacity:0
+      })),
+      transition(':enter',[
+        animate(300,style({
+          transform:'translateX(0)',
+          opacity:1
+        }))
+      ])
+    ])
+  ]
 })
 export class SkillHeadComponent implements OnInit {
   SKI: Skills[] = [];

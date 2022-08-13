@@ -27,7 +27,7 @@ import { EditProyectosComponent } from './proyectos/edit-proyectos.component';
 import { EditPersonaComponent } from './encabezado/edit-persona.component';
 import { NewSkillComponent } from './skill-head/new-skill.component';
 import { EditskillsComponent } from './skill-head/editskills.component';
-
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 
 @NgModule({
@@ -53,6 +53,7 @@ import { EditskillsComponent } from './skill-head/editskills.component';
     EditPersonaComponent,
     NewSkillComponent,
     EditskillsComponent,
+   
   
 
     
@@ -78,7 +79,8 @@ import { EditskillsComponent } from './skill-head/editskills.component';
         "showInnerStroke": false,
         "startFromZero": false
     }),
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [
     interceptorProvider

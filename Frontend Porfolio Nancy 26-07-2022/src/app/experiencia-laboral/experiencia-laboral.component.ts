@@ -1,3 +1,4 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Experiencia } from '../Model/experiencia';
@@ -7,7 +8,21 @@ import { TokenService } from '../service/token.service';
 @Component({
   selector: 'app-experiencia-laboral',
   templateUrl: './experiencia-laboral.component.html',
-  styleUrls: ['./experiencia-laboral.component.css']
+  styleUrls: ['./experiencia-laboral.component.css'],
+  animations:[
+    trigger('enterState', [
+      state('void',style({
+        transform:'translateX(-100%)',
+        opacity:0
+      })),
+      transition(':enter',[
+        animate(300,style({
+          transform:'translateX(0)',
+          opacity:1
+        }))
+      ])
+    ])
+  ]
 })
 export class ExperienciaLaboralComponent implements OnInit {
   expe: Experiencia[] = [];

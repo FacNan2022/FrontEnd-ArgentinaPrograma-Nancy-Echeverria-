@@ -1,4 +1,4 @@
-<div class="card mat-card" id="firstcard">
+<div class="card mat-card" id="firstcard" @enterState>
     <div id="portada">
         <div id="video">
           <video autoplay="autoplay" > <source src="../assets/36050907.mp4" type="video/mp4" ></video>
@@ -11,7 +11,7 @@
     </div>
     <div id="info-perfil">
         <h1> {{persona.nombre}} {{persona.apellido}}</h1>
-        <button type="text">Añadir sección</button>
+        <button class="btn btn-outline-primary" type="text">Añadir sección</button>
     </div>
    
 </div>

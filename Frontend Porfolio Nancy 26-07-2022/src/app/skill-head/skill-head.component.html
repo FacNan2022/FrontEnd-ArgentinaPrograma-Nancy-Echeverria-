@@ -1,4 +1,4 @@
-<div class="card mat-card" id="skill">
+<div class="card mat-card" id="skill" @enterState>
     <div class="row">
         <div class="text-center col-12">
 
@@ -22,8 +22,9 @@
   [animationDuration]="600"
   [imageSrc]="Skills.imagen"
   [showImage]="true"
-  [imageHeight]="50"
-  [imageWidth]="100"
+  [imageHeight]="60"
+  [imageWidth]="60"
+
 ></circle-progress>
             <button class="btn btn-light" routerLink="/editskill/{{Skills.id}}"*ngIf="isLogged" >
                 <i class="bi bi-pencil-fill"></i></button>
@@ -31,6 +32,5 @@
                 <i class="bi bi-trash-fill"></i></button>
         </div>
 
-
-
+     
     </div>

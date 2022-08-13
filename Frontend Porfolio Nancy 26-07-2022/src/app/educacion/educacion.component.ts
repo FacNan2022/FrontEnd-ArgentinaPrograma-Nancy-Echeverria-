@@ -1,3 +1,4 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
@@ -9,7 +10,21 @@ import { TokenService } from '../service/token.service';
 @Component({
   selector: 'app-educacion',
   templateUrl: './educacion.component.html',
-  styleUrls: ['./educacion.component.css']
+  styleUrls: ['./educacion.component.css'],
+  animations:[
+    trigger('enterState', [
+      state('void',style({
+        transform:'translateX(-100%)',
+        opacity:0
+      })),
+      transition(':enter',[
+        animate(300,style({
+          transform:'translateX(0)',
+          opacity:1
+        }))
+      ])
+    ])
+  ]
 })
 export class EducacionComponent implements OnInit {
   edu: Educacion[]=[];
