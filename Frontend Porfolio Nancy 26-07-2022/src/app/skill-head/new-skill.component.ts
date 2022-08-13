@@ -11,18 +11,18 @@ import { SerSekillsService } from '../service/serskills.service';
 export class NewSkillComponent implements OnInit {
   
  nombre: string =' ';
-   imagen:string =' ';
+   
    ColorInterior:string =' ';
     ColorExterno:string =' ';
    porcentaje:number;
-
+   imagen:string =' ';
 
   constructor(private sSkills: SerSekillsService, private router: Router) { }
 
   ngOnInit(): void {
   }
   onCreate(): void {
-    const ski = new Skills(this.nombre, this.ColorExterno, this.porcentaje, this.ColorInterior, this.imagen);
+    const ski = new Skills(this.nombre,this.imagen,this.ColorInterior, this.ColorExterno, this.porcentaje);
     this.sSkills.save(ski).subscribe(data => {
       alert("Skills añadido")
       this.router.navigate(['']);

@@ -25,9 +25,9 @@
   [imageHeight]="50"
   [imageWidth]="100"
 ></circle-progress>
-            <button class="btn btn-light" routerLink="/editskill/{{Skills.id}}">
+            <button class="btn btn-light" routerLink="/editskill/{{Skills.id}}"*ngIf="isLogged" >
                 <i class="bi bi-pencil-fill"></i></button>
-            <button class="btn btn-danger" (click)="delete(Skills.id)">
+            <button class="btn btn-danger" (click)="delete(Skills.id)"*ngIf="isLogged" >
                 <i class="bi bi-trash-fill"></i></button>
         </div>
 
