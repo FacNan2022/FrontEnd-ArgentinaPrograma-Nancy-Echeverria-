@@ -1,96 +1,78 @@
-nav {
-    position: relative;
-    padding: 0;
-    margin: 2px 2px;
-    background-color:red;
-}
-
-h1#Bienvenido {
+.example-container {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    right: 40%;
-    bottom: 4%;
-    top: 8%;
-    font-family: 'Tangerine', cursive;
-    font-size: 50px;
-}
-
-img#argentinaPrograma {
-    border-radius: 10%;
-
-
-}
-.navbar navbar-light bg-light{
-    border-radius: 15%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
   
-}
-
-button {
+  .example-is-mobile .example-toolbar {
+    position: fixed;
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    z-index: 1;
+   
+  }
+  mat-toolbar{
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-52379.jpg?w=900&t=st=1659467553~exp=1659468153~hmac=508fb2650d7a59d5e08db99d3347e8b1ec9ed5a7f572e562a405696d8645ac3b);
+  }
+  
+  h1.example-app-name {
+    margin-left: 8px;
+    left: 12%;
     position: absolute;
-    bottom: 22%;
-    right: 1%;
+  }
+  
+  .example-sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
+    background-color: transparent;
+  }
+  
+  .example-is-mobile .example-sidenav-container {
+    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+       `<body>` to be our scrolling element for mobile layouts. */
+    flex: 1 0 auto;
+  }
+  mat-sidenav{
+    width: 20%;
+    height: 500%;
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-52379.jpg?w=900&t=st=1659467553~exp=1659468153~hmac=508fb2650d7a59d5e08db99d3347e8b1ec9ed5a7f572e562a405696d8645ac3b);
+    color: black;
 
-}
+  }
 
-
-img#facebook {
-    border-radius: 50%;
+  .login{
+   position: absolute;
+   right: 10px;
+   top: 8px;
+   color: primary;
+  }
+  #facebook{
     position: absolute;
     right: 10%;
-    top: 13%;
-}
-
-img#instagram {
+    top: 10px;
     border-radius: 50%;
+  }
+  #github{
     position: absolute;
-    right: 14%;
-    width: 3%;
-    height: 55%;
-    top: 25%;
-}
-
-img#github {
-    border-radius: 60%;
+    right: 13.5%;
+    top: 10px;
+    border-radius: 50%;
+  }
+#linkedin{
     position: absolute;
     right: 17%;
-    top: 20%;
+    top: 11px;
+    border-radius: 5%;
+   
 }
 
-img#linkedin {
-    border-radius: 25%;
-    position: absolute;
-    right: 22%;
-    top: 25%;
-
+#argentinaPrograma{
+ 
+    border-radius: 5%;
+    
 }
-div#navbarToggleExternalContent{
-    position: relative;
-}
-.bars__menu{
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(6);
-    cursor: pointer;
-}
-
-.bars__menu span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #9A00BF;
-    margin-top: 6px;
-    transform-origin: 0px 100%;
-    transition: all 300ms;
-}
-
-.activeline1__bars-menu{
-    transform: rotate(45deg) translate(-2px, 1px); 
-}
-
-.activeline2__bars-menu{
-    opacity: 0;
-    margin-left: -30px; 
-}
-

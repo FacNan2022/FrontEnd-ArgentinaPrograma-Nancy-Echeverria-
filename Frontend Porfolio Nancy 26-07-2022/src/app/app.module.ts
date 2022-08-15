@@ -27,7 +27,8 @@ import { EditProyectosComponent } from './proyectos/edit-proyectos.component';
 import { EditPersonaComponent } from './encabezado/edit-persona.component';
 import { NewSkillComponent } from './skill-head/new-skill.component';
 import { EditskillsComponent } from './skill-head/editskills.component';
-import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { MaterialModule } from './material.module';
+
 
 
 @NgModule({
@@ -53,6 +54,9 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     EditPersonaComponent,
     NewSkillComponent,
     EditskillsComponent,
+
+ 
+
    
   
 
@@ -64,6 +68,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    MaterialModule,
+  
     NgCircleProgressModule.forRoot({
      
         "backgroundGradient": true,
