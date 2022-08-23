@@ -1,4 +1,3 @@
-
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import{PersonaService} from 'src/app/service/personas.service';
@@ -29,7 +28,7 @@ import { TokenService } from '../service/token.service';
 export class EncabezadoComponent implements OnInit {
   isLogged= false;
   [x: string]: any;
-  persona: PersonaEdit =new PersonaEdit("","","");
+  persona: PersonaEdit =new PersonaEdit("","","","","");
 
   constructor(public personaService: PersonaService, private tokenService: TokenService) { }
 
@@ -45,4 +44,3 @@ export class EncabezadoComponent implements OnInit {
   
    
   }
- 

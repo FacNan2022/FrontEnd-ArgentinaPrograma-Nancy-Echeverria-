@@ -1,7 +1,7 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { HttpErrorResponse } from '@angular/common/http';
+
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+
 import { ActivatedRoute, Router } from '@angular/router';
 import { Educacion } from '../Model/educacion';
 import { SEducacionService } from '../service/seducacion.service';
@@ -47,7 +47,7 @@ export class EducacionComponent implements OnInit {
     }
   }
 
-    //Echo con Matias
+
   cargarEducacion(): void{
     this.sEducacion.lista().subscribe(data => { this.edu = data;})
   }

@@ -28,7 +28,9 @@ export class PersonaService {
   public update(id: number, persona: PersonaEdit): Observable<any> {
     return this.httpClient.put<any>(this.URL + `update/${id}`, persona);
   }
-  public detail(id: number): Observable<PersonaEdit> {
+ 
+  public detail(id: number): Observable<PersonaEdit>{
     return this.httpClient.get<PersonaEdit>(this.URL + `detail/${id}`);
   }
 }
+

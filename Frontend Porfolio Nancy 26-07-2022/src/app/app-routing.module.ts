@@ -24,14 +24,13 @@ const routes: Routes = [
   { path: 'editexp/:id', component: EditExperienciaComponent},
   { path: 'nuevaeducacion', component: NewEducacionComponent},
   { path: 'editeducacion/:id', component: EditEducacionComponent},
-  {  path: 'nuevoproyecto', component: NewProyectoComponent},
+  {path: 'nuevoproyecto', component: NewProyectoComponent},
   { path: 'editproyectos/:id', component: EditProyectosComponent},
   { path: 'editpersona/:id', component: EditPersonaComponent},
   { path: 'nuevoskills', component: NewSkillComponent},
   { path: 'editskill/:id', component: EditskillsComponent},
-  { path: 'AcerceDe', component: AcercaDeComponent},
-];
 
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

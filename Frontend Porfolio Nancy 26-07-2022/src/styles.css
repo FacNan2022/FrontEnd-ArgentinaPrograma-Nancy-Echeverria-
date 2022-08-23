@@ -12,6 +12,7 @@ body{
     border-radius: 6px;
     padding:6px 5px;
     border: greenyellow 5px solid;
+    color: white;
    
 
 }
@@ -54,4 +55,26 @@ div#portada{
         top:5%;
         z-index: 1;
     }
+    #Cerrar{
+        position: absolute;
+        width: 100%;
+        margin-bottom: 5px;
+        margin: 0px;
+        height: 10%;
+        top: 5px;
+        left: 0;
+     }
+     #cancelar{
+       position: absolute;
+       right: 10px;
+     }
+     
+     form{
+        margin-top: 50px;
+     
+     }
+     label{
+        font-size: 15px;
+        color: white;
+     }
 

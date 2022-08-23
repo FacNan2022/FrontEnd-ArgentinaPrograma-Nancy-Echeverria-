@@ -1,64 +1,82 @@
 <div class="example-container" [class.example-is-mobile]="mobileQuery.matches" *ngIf="shouldRun">
-  <mat-toolbar  class="example-toolbar">
-    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+  <mat-toolbar class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon id="menu">menu</mat-icon>
+    </button>
 
-    <a href="https://acortar.link/URU5uK"><img  id="argentinaPrograma" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtEiEc9g1HCgMrNDvYqNcUQNanRvZTmde1gw&usqp=CAU" width=35% height="5%" class="d-inline-block align-text-top"> </a> 
-   
+    <a href="https://acortar.link/URU5uK"><img id="argentinaPrograma"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtEiEc9g1HCgMrNDvYqNcUQNanRvZTmde1gw&usqp=CAU"
+        width=35% height="5%" class="d-inline-block align-text-top"> </a>
+<div id="bienvenido">
+  <h1 id="argentina">Argentina programa</h1>
 
-    <h1 class="example-app-name">Argentina programa</h1>
+</div>
 
     <a href="https://www.facebook.com/nancy.echeverria.56">
-      <img src="https://w7.pngwing.com/pngs/670/159/png-transparent-facebook-logo-social-media-facebook-computer-icons-linkedin-logo-facebook-icon-media-internet-facebook-icon.png" width="3%" height="5%"  id="facebook">
-      </a>
+      <img
+        src="https://w7.pngwing.com/pngs/670/159/png-transparent-facebook-logo-social-media-facebook-computer-icons-linkedin-logo-facebook-icon-media-internet-facebook-icon.png"
+        width="3%" height="5%" id="facebook">
+    </a>
 
-      <a href="https://github.com/FacNan2022">
-        <img src="https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head.png" width="3%" height="5%" id="github">
-      </a>
+    <a href="https://github.com/FacNan2022">
+      <img
+        src="https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head.png"
+        width="3%" height="5%" id="github">
+    </a>
 
-      <a href="https://www.linkedin.com/in/nancy-echeverria-8b66ab23b/"><img id="linkedin"src="https://w7.pngwing.com/pngs/155/954/png-transparent-linkedin-business-marketing-social-networking-service-job-company-profile-company-text-trademark.png" width="8%" height="5%"></a>
-    
-   
+    <a href="https://www.linkedin.com/in/nancy-echeverria-8b66ab23b/"><img id="linkedin"
+        src="https://w7.pngwing.com/pngs/155/954/png-transparent-linkedin-business-marketing-social-networking-service-job-company-profile-company-text-trademark.png"
+        width="8%" height="5%"></a>
 
-    <a href="/login"><button mat-raised-button color="primary" id="iniciarSesion" type="button" class="login" (click)="login()" *ngIf="!isLogged" >Iniciar Sesion</button></a> 
-    <a href="/login"><button mat-raised-button color="primary"  id="cerrarSesion" type="button" class="login" (click)="onLogOut()" *ngIf="isLogged" >Cerrar Sesión</button></a> 
+
+
+    <a href="/login"><button mat-raised-button color="primary" id="iniciarSesion" type="button" class="login"
+        (click)="login()" *ngIf="!isLogged">Iniciar Sesion</button></a>
+    <a href="/login"><button mat-raised-button color="primary" id="cerrarSesion" type="button" class="login"
+        (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button></a>
 
   </mat-toolbar>
 
-  <mat-sidenav-container class="example-sidenav-container"
-                         [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
-                 [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
-      <mat-nav-list><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+  <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="56">
+      <mat-nav-list>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+        <nav>
+          <ul>
+            <li><a href=""><i class="bi bi-house-heart-fill">Inicio</i>
+                </a></li>
 
-       <ul>
-        <li><a href=""><button><i class="bi bi-house-heart-fill">Inicio</i>
-        </button></a></li>
-       <li><a href="#secondcard"><button mat-raised-button color="accent" class="btn btn-outline-black">Acerca de</button></a></li>
-      <li><a href="#Educacion"><button mat-raised-button color="accent"  class="btn btn-outline-primary">Educación</button></a></li>
+            <li><a href="#secondcard"><i
+                    class="bi bi-terminal-plus">Acerca de</i></a></li>
 
-    <li><a href="#Experiencia"><button mat-raised-button color="accent" class="btn btn-outline-primary">Experiencia-laboral</button></a></li>
-    <li><a href="#skill"><button mat-raised-button color="accent" class="btn btn-outline-primary">Skills</button></a></li>
+            <li><a href="#Educacion">Educación</a></li>
 
-    <li><a href="#Proyectos"><button mat-raised-button color="accent" class="btn btn-outline-primary">Proyectos</button></a></li>
+            <li><a href="#Experiencia">Experiencia-laboral</a>
+            </li>
+            <li><a href="#skill">Skills</a></li>
 
-    
-       </ul> 
-      
+            <li><a href="#Proyectos">Proyectos</a></li>
+
+
+          </ul>
+          
+        </nav>
+        <div id="titulo">
+          <h1>Mi Portfolio</h1>
+          <img id="logo" src="https://t4.ftcdn.net/jpg/03/03/25/33/240_F_303253334_CciYzeBpazzDURupZnHhgyQNtes4hEkj.jpg" width="80%" height="80%">
+        </div>
+       
+
       </mat-nav-list>
 
     </mat-sidenav>
 
     <mat-sidenav-content>
-    
-    <router-outlet></router-outlet>
+
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
 
 <div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>
- 
-
-
-  
-  
- 

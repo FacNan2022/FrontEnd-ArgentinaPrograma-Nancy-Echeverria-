@@ -17,7 +17,7 @@ export class SEducacionService {
   public lista(): Observable<Educacion[]>{
     return this.httpClient.get<Educacion[]>(this.URL + 'lista');
   }
-  //Echo con Camacho
+  
  
 
   public detail(id: number): Observable<Educacion>{

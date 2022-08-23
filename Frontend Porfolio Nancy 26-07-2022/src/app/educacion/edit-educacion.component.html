@@ -1,7 +1,8 @@
 <div class="card mat-card" id="Educación">
     <div class="container" *ngIf="eduC">
         <div class="row">
-            <div>
+            <div> <div id="Cerrar"><a href=""><button class ="btn-outline-primary" id="cancelar"><i class="bi bi-x-octagon-fill"></i></button></a></div>
+
                 <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                     <div class="form-group">
                         <label for="institucion">Nombre de la institucion</label>

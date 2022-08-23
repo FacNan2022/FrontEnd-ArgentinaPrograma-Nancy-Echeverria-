@@ -37,6 +37,16 @@
        `<body>` to be our scrolling element for mobile layouts. */
     flex: 1 0 auto;
   }
+
+  #bienvenido{
+   
+    margin: 0 auto;
+    position:absolute;
+    left: 40%;
+    
+
+
+  }
   mat-sidenav{
     width: 20%;
     height: 500%;
@@ -44,6 +54,11 @@
     color: black;
 
   }
+#argentina{
+  font-family: 'Tangerine', cursive;
+  font-size: 50px;
+}
+
 
   .login{
    position: absolute;
@@ -75,4 +90,59 @@
  
     border-radius: 5%;
     
+}
+
+
+ul li{
+  list-style: none;
+  margin: 10px auto;
+  border: 2px #ccc solid;
+  background-color: transparent;
+  text-align: center;
+}
+ul{
+  margin-top: 6px;
+  position:relative;
+ top: 15%;
+}
+ul li:hover{
+  border: 2px #c78c19 solid;
+  
+}
+
+nav{
+  height: 50%;
+  position: absolute;
+  margin: 0 auto;
+}
+
+nav li{
+  font-weight: bold;
+}
+
+nav a{
+  margin-top: 5px;
+  text-transform: uppercase;
+
+}
+
+nav a:hover{
+  color: beige;
+  font-size:20px;
+  text-decoration: underline;
+}
+#titulo{
+  display: block;
+  text-align: center;
+ 
+}
+#titulo h1{
+  font-family: 'Tangerine', cursive;
+  font-size: 50px;
+  text-decoration:underline;
+}
+#logo{
+  border-radius: 50%;
+  margin-top: 0px;
+
 }

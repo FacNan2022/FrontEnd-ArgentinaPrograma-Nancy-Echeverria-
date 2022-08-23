@@ -1,20 +1,37 @@
 <div class="card mat-card" >
     <div class="container" >
         <div class="row" *ngIf="per" >
-    
+            <div id="Cerrar"><a href=""><button class ="btn-outline-primary" id="cancelar"><i class="bi bi-x-octagon-fill"></i></button></a></div>
             
-           <div >
+           <div class=>
            
         <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
-            <div class="form-group">
+    
+        
+            <form action=""> <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="per.nombre" required/>
             </div>
             <div class="form-group">
-                <label for="img">Descripcion de la tarea</label>
+                <label for="apellido">apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="per.apellido" required/>
+            </div>
+            <div class="form-group">
+                <label for="img">URL</label>
                 <input type="text" class="form-control" id="img" name="img"
                     [(ngModel)]="per.img" required/>
             </div>
+            <div class="form-group">
+                <label for="portada">URL</label>
+                <input type="text" class="form-control" id="portada" name="portada"
+                    [(ngModel)]="per.portada" required/>
+            </div>
+            <div class="form-group">
+                <label for="ubicacion">URL</label>
+                <input type="text" class="form-control" id="ubicacion" name="ubicacion"
+                    [(ngModel)]="per.ubicacion" required/>
+            </div></form>
+           
             <button class="btn btn-primary">
                 Actualizar
             </button>
