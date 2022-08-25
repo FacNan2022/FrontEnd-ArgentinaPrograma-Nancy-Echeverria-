@@ -1,6 +1,7 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import swal from 'sweetalert2';
 import { Proyectos } from '../Model/proyectos';
 import { SProyectosService } from '../service/sproyectos.service';
 import { TokenService } from '../service/token.service';
@@ -46,6 +47,20 @@ export class ProyectosComponent implements OnInit {
     this.sProyectos.lista().subscribe(data => {this.pro=data;})
    }
    delete(id?: number){
+    swal({
+      title: '¿Estas seguro?',
+      text: "Confirma si deseas eliminar el proyecto",
+      type: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Si , eliminar',
+      cancelButtonText: 'No, cancelar',
+      confirmButtonClass: 'btn btn-success',
+      cancelButtonClass: 'btn btn-danger',
+      buttonsStyling: true
+    }).then((result) => {
+      if(result.value){
      if(id !=undefined){
        this.sProyectos.delete(id).subscribe(data =>{
          this.cargarProyecto();
@@ -55,6 +70,8 @@ export class ProyectosComponent implements OnInit {
      }
    }
  
- }
+ })
+}
+}
  
 

@@ -1,148 +1,139 @@
-.example-container {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
-  
-  .example-is-mobile .example-toolbar {
-    position: fixed;
-    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
-    z-index: 1;
-   
-  }
-  mat-toolbar{
-    background-image: url(https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-52379.jpg?w=900&t=st=1659467553~exp=1659468153~hmac=508fb2650d7a59d5e08db99d3347e8b1ec9ed5a7f572e562a405696d8645ac3b);
-  }
-  
-  h1.example-app-name {
-    margin-left: 8px;
-    left: 12%;
-    position: absolute;
-  }
-  
-  .example-sidenav-container {
-    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
-       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
-    flex: 1;
-    background-color: transparent;
-  }
-  
-  .example-is-mobile .example-sidenav-container {
-    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
-       `<body>` to be our scrolling element for mobile layouts. */
-    flex: 1 0 auto;
-  }
-
-  #bienvenido{
-   
-    margin: 0 auto;
-    position:absolute;
-    left: 40%;
-    
-
-
-  }
-  mat-sidenav{
-    width: 20%;
-    height: 500%;
-    background-image: url(https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-52379.jpg?w=900&t=st=1659467553~exp=1659468153~hmac=508fb2650d7a59d5e08db99d3347e8b1ec9ed5a7f572e562a405696d8645ac3b);
-    color: black;
-
-  }
-#argentina{
-  font-family: 'Tangerine', cursive;
-  font-size: 50px;
+#btn-menu{
+  display: none;
 }
 
+.btn-menu label{
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  width:40px;
+  margin-left: 5px;
 
-  .login{
-   position: absolute;
-   right: 10px;
-   top: 8px;
-   color: primary;
-  }
-  #facebook{
-    position: absolute;
-    right: 10%;
-    top: 10px;
-    border-radius: 50%;
-  }
-  #github{
-    position: absolute;
-    right: 13.5%;
-    top: 10px;
-    border-radius: 50%;
-  }
-#linkedin{
-    position: absolute;
-    right: 17%;
-    top: 11px;
-    border-radius: 5%;
-   
 }
 
-#argentinaPrograma{
- 
-    border-radius: 5%;
-    
+#menu{
+  background-color: #bbb;
 }
 
-
-ul li{
-  list-style: none;
-  margin: 10px auto;
-  border: 2px #ccc solid;
-  background-color: transparent;
-  text-align: center;
-}
-ul{
-  margin-top: 6px;
-  position:relative;
- top: 15%;
-}
-ul li:hover{
-  border: 2px #c78c19 solid;
-  
-}
-
-nav{
-  height: 50%;
+.container-menu{
   position: absolute;
-  margin: 0 auto;
+  background: rgba(0,0,0,0.5);
+  z-index:1;
+
+  width: 100%;
+        height: 100vh;
+        top: 0;left: 0;
+        transition: all 500ms ease;
+    opacity: 0;
+        visibility: hidden;
+        
 }
 
-nav li{
-  font-weight: bold;
+#btn-menu:checked ~ .container-menu{
+  opacity: 1;
+  visibility: visible;
 }
 
-nav a{
-  margin-top: 5px;
-  text-transform: uppercase;
+.cont-menu{
+  position:relative;
+  width: 100%;
+  max-width: 250px;
+  background: #1c1c1c;
+  z-index:2;
+  height: 100vh;
+
+        transition: all 500ms ease;
+
+
 
 }
 
-nav a:hover{
-  color: beige;
-  font-size:20px;
-  text-decoration: underline;
-}
-#titulo{
+.cont-menu nav a{
   display: block;
-  text-align: center;
- 
+  text-decoration: none;
+  padding: 20px;
+  color: #c7c7c7;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
 }
-#titulo h1{
-  font-family: 'Tangerine', cursive;
-  font-size: 50px;
-  text-decoration:underline;
-}
-#logo{
-  border-radius: 50%;
-  margin-top: 0px;
 
+.cont-menu nav a:hover{
+  border-left: 5px solid #c7c7c7;
+  background: #1f1f1f;
+}
+
+.cont-menu nav{
+  transform: translateY(15%);
+}
+
+.cont-menu label{
+  position:absolute;
+  right: 5px;
+  top: 10px;
+   color: #fff;
+cursor: pointer;
+font-size: 18px;
+}
+#redesSociales {
+  background-color: blue;
+  right: 0;
+  top: 10px;
+}
+#facebook{
+  position: absolute;
+  right: 10%;
+  top: 10px;
+  border-radius: 50%;
+}
+#github{
+  position: absolute;
+  right: 13.5%;
+  top: 10px;
+  border-radius: 50%;
+}
+#linkedin{
+  position: absolute;
+  right: 17%;
+  top: 11px;
+  border-radius: 5%;
+}
+#btnLogin{
+  background-color: blue;
+    right: 5px;
+    position: absolute;
+    top: 10px;
+}
+@media (max-width:800px) {
+  #menu{
+    background-color: blue;
+    position: relative;
+  }
+  .mat-card{
+    width: 100%;
+  }
+
+  #redesSociales {
+  background-color: blue;
+  right: 0;
+  bottom: 10px;
+  
+}
+#facebook{
+  position: absolute;
+  right: 10%;
+  top: 10px;
+  border-radius: 50%;
+}
+#github{
+  position: absolute;
+  right: 13.5%;
+  top: 10px;
+  border-radius: 50%;
+}
+#linkedin{
+  position: absolute;
+  right: 17%;
+  top: 11px;
+  border-radius: 5%;
+}
 }
