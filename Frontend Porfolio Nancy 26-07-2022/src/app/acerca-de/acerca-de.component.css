@@ -93,7 +93,7 @@ main {
 
 }
 
-@media(max-width:800px) {
+@media(max-width:900px) {
     #Acerca-de-Mi {
         display: inline-block;
         height: 100%;
@@ -108,8 +108,9 @@ main {
         overflow: visible;
         margin-left: 1px;
         border: 3px solid black;
-        top: 270px;
+        top: 280px;
         height: auto;
+       
     }
 
     .foto-perfil {
