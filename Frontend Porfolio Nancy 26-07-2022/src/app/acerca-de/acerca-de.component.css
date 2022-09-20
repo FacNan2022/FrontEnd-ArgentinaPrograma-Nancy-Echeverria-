@@ -1,3 +1,5 @@
+
+/*codigos del main*/
 /*codigos del main*/
 main {
     width: 100%;
@@ -91,7 +93,7 @@ main {
 
 }
 
-@media(max-width:1200px) {
+@media(max-width:800px) {
     #Acerca-de-Mi {
         display: inline-block;
         height: 100%;
@@ -106,14 +108,14 @@ main {
         overflow: visible;
         margin-left: 1px;
         border: 3px solid black;
-        top: 40%;
+        top: 270px;
         height: auto;
     }
 
     .foto-perfil {
         z-index: 1;
         width: 100%;
-        top: 0px;
+        top: -10px;
         right: 0px;
     }
     .foto-perfil img{

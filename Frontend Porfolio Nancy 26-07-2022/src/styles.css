@@ -91,14 +91,19 @@ main {
 }
 
 /*estilos educacion*/
+.tituloPrincipal {
+    z-index: 1;
+    position: absolute;
+    right: 40%;
+    top: 2px;
+}
+
 .educacion {
     background-image: url(https://fondosmil.com/fondo/70310.jpg);
     width: 100%;
     height: auto;
     padding: 20px;
     position: relative;
-
-
 }
 
 .info-educacion {
@@ -110,7 +115,6 @@ main {
     color: white;
 
 }
-
 
 .titulo {
     width: 30%;
@@ -206,6 +210,7 @@ main {
     width: 100%;
     height: 100vh;
     border: solid 2px black;
+    position: relative;
 
 }
 
@@ -262,7 +267,7 @@ main {
     background-image: url(https://img.freepik.com/foto-gratis/fondo-abstracto-technologico-lineas-conectividad_1048-5570.jpg?w=740&t=st=1663562257~exp=1663562857~hmac=3b7d07b4615963762659d639b3ac1325817d6b3d1f0c125905d874754e18c1f3);
     width: 100%;
     height: 100vh;
-position: relative;
+    position: relative;
 }
 
 .mat-card {
@@ -271,7 +276,7 @@ position: relative;
     float: right;
     background-color: rgba(0, 175, 0, 0.7);
     padding: 30px;
-    margin-top:30px;
+    margin-top: 30px;
 }
 
 /*boton de ir arriba*/
@@ -321,18 +326,19 @@ position: relative;
         width: 100%;
         height: 10vh;
     }
-    .info{
-        width:100%;
-        height:auto;
-        position:absolute;
-        top:45px;
-        padding:10px;
+
+    .info {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 45px;
+        padding: 10px;
         right: 0px;
     }
 
-    .btn-dark{
-        top:-15px;
-        z-index:1;
+    .btn-dark {
+        top: -15px;
+        z-index: 1;
     }
 
     .mat-card {
@@ -341,7 +347,11 @@ position: relative;
         width: 100%;
         background-color: rgba(0, 175, 0, 0.7);
         padding: 30px;
-    }  
+    }
+
+    .tituloPrincipal{
+        position: relative;
+        left:113px;
+    }
 
 }
-

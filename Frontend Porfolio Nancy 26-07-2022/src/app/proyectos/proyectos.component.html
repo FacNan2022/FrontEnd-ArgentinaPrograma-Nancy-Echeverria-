@@ -1,7 +1,8 @@
 
     <div class="proyectos" id="proyectos"@enterState>
       <button type="button" class="btn btn-dark" routerLink="/nuevoproyecto" *ngIf="isLogged"><i class="fa-solid fa-plus"></i></button>
-        <div class="listaProyectos">
+      <h1 class="tituloPrincipal"><strong>Proyectos</strong></h1>
+        <div class="listaProyectos" id="añadirP">
   
           <div class="proyecto"*ngFor="let Proyectos of pro">
  
@@ -18,7 +19,7 @@
             </div>
   
             <div class="info-proyecto">
-              <h1>{{Proyectos.nombre}}</h1>
+              <h2>{{Proyectos.nombre}}</h2>
               <p>{{Proyectos.descripcion}}</p>
             </div>
   

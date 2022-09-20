@@ -34,3 +34,10 @@
     transform: scale(1.5);
 
 }
+@media(max-width:900px){
+    #skill-rotate{
+        left:47px;
+        position: relative;
+    }
+    
+}

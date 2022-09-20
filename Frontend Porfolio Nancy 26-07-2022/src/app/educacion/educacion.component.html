@@ -2,8 +2,10 @@
   <button type="button" class="btn btn-dark" *ngIf="isLogged" routerLink="nuevaeducacion">
     <i class="fa-solid fa-plus"></i>
 </button>
+<h1 class="tituloPrincipal"><strong>Educacion</strong></h1>
 <section id="contenido-educacion" *ngFor="let Educacion of edu">
-  <div class="info-educacion container" >   
+  <div class="info-educacion container" >  
+ 
     <div class="titulo" >
       <h2>{{Educacion.institucion}}</h2>
       <h2>{{Educacion.titulo}}</h2>

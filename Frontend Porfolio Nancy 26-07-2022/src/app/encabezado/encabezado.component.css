@@ -48,6 +48,11 @@
     font-size: 20px;
 }
 
+.botonesDireccion{
+    position: relative;
+    top:55px;
+}
+
 @media(max-width:900px) {
 
     .tituloPrincipal{
