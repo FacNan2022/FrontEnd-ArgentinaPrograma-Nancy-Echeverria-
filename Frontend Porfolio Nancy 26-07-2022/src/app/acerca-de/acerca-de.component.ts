@@ -1,5 +1,8 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { PersonaEdit } from '../Model/PersonaEdit';
+import { PersonaService } from '../service/personas.service';
+import { TokenService } from '../service/token.service';
 
 
 @Component({
@@ -23,10 +26,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcercaDeComponent implements OnInit {
 
-  constructor() { }
+  isLogged= false;
+  [x: string]: any;
+  persona: PersonaEdit =new PersonaEdit("","","","","","");
+
+  constructor(public personaService: PersonaService, private tokenService: TokenService) { }
+
 
   ngOnInit(): void {
-    
+    this.personaService.getPersona().subscribe(data=>{this.persona= data});
+ if(this.tokenService.getToken()){
+      this.isLogged= true;
+    }else{
+      this.isLogged= false;
+    }
   }
 
 }

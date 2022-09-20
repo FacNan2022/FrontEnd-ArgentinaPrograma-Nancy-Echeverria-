@@ -1,14 +1,16 @@
-<div class="card mat-card" id="skill" @enterState>
+<div class="skills" id="skills">
+    <div class="container" id="skill" @enterState>
     <div class="row">
         <div class="text-center col-12">
 
             <h1>Hard & Soft Skills</h1>
+            
             <button type="button" class="btn btn-dark" *ngIf="isLogged" routerLink="nuevoskills">
-                Nuevo Skills
+                <i class="fa-solid fa-plus"></i>
             </button>
         </div>
 
-        <div class="col-sm-4 col-md-4 col-lg-4" *ngFor="let Skills of SKI">
+        <div id="skill-rotate" class="col-sm-4 col-md-4 col-lg-4" *ngFor="let Skills of SKI">
             <h2>{{Skills.nombre}}</h2>
 
             <circle-progress
@@ -26,11 +28,15 @@
   [imageWidth]="60"
 
 ></circle-progress>
-            <button class="btn btn-light" routerLink="/editskill/{{Skills.id}}"*ngIf="isLogged" >
-                <i class="bi bi-pencil-fill"></i></button>
-            <button class="btn btn-danger" (click)="delete(Skills.id)"*ngIf="isLogged" >
-                <i class="bi bi-trash-fill"></i></button>
-        </div>
+<div class="botones">
+    <button class="editar" routerLink="/editskill/{{Skills.id}}"*ngIf="isLogged" >
+        <i class="bi bi-pencil-fill"></i></button>
+    <button class="eliminar" (click)="delete(Skills.id)"*ngIf="isLogged" >
+        <i class="bi bi-trash-fill"></i></button>
+
+</div>
+            </div>
 
      
     </div>
+</div>

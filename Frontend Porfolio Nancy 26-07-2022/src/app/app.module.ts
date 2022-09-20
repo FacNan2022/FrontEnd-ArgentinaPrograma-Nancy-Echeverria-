@@ -28,6 +28,7 @@ import { EditPersonaComponent } from './encabezado/edit-persona.component';
 import { NewSkillComponent } from './skill-head/new-skill.component';
 import { EditskillsComponent } from './skill-head/editskills.component';
 import { MaterialModule } from './material.module';
+import { ContactoComponent } from './contacto/contacto.component';
 
 
 
@@ -55,6 +56,7 @@ import { MaterialModule } from './material.module';
     EditPersonaComponent,
     NewSkillComponent,
     EditskillsComponent,
+    ContactoComponent,
 
  
 

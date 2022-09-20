@@ -1,8 +1,29 @@
+.edicion{
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-abstracto-technologico-lineas-conectividad_1048-5570.jpg?w=740&t=st=1663562257~exp=1663562857~hmac=3b7d07b4615963762659d639b3ac1325817d6b3d1f0c125905d874754e18c1f3);
+    width: 100%;
+    height: 100vh;
+    
+}
 .mat-card {
-
-
     float: right;
     right: 25%;
     width: 50%;
+    background-color: rgba(0, 175, 0, 0.7);
+    padding: 30px;
 
 }
+
+@media(max-width:1200px){
+    .edicion{
+       padding: 10px;
+       position: relative;
+    }
+   .mat-card{
+    width: 94%;
+    right: 11px;
+    position: absolute;
+   
+   }
+ }
+ 
+

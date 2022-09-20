@@ -1,80 +1,347 @@
-body{
-    background-image: url(https://img.freepik.com/vector-gratis/tecnologia-red-futurista-azul_53876-97395.jpg?w=740&t=st=1659467668~exp=1659468268~hmac=9e1d29b0dd792efeffd70353d72c8a3b23c94e2fe3bd3ac5c28161bea669f0f3)
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/*codigos del header*/
+.portada {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
 }
 
-   
+.texto-imagen {
+    width: 100%;
+    position: absolute;
+    top: 43%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: 'font-effect-shadow-multiple';
+    text-align: center;
+    top: 52%;
+}
 
-.mat-card{
+.portada img {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.texto-imagen button:hover {
+    font-size: 20px;
+}
+
+/*codigos del main*/
+main {
+    width: 100%;
+    position: relative;
+
+}
+
+#Acerca-de-Mi {
+    width: 100%;
+    position: absolute;
+    top: 1%;
+    display: flex;
+}
+
+.foto-perfil {
+    width: 40%;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+
+
+}
+
+.foto-perfil img {
+    border-radius: 50%;
+    width: 50%;
+    left: 50px;
+    top: 30px;
+    position: relative;
+}
+
+#manoTransparente {
+    width: 90%;
+    height: 100%;
+    top: -122px;
+    left: -6%;
+    position: absolute;
+    z-index: 1;
+
+}
+
+#manoTransparente img {
     width: 100%;
     height: 100%;
-    background-image: url(https://img.freepik.com/foto-gratis/fondo-azul-degradado-lujo-abstracto-azul-oscuro-liso-banner-estudio-vineta-negra_1258-52379.jpg?w=900&t=st=1659467553~exp=1659468153~hmac=508fb2650d7a59d5e08db99d3347e8b1ec9ed5a7f572e562a405696d8645ac3b);
-    margin:6px 0;
-    border-radius: 6px;
-    padding:6px 5px;
-    border: greenyellow 5px solid;
-    color: white;
-   
 
 }
 
-div#portada{
-    width:100%;
-    height: 100%;
+.informacion {
+    width: 60%;
+    border: 2px solid black;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    margin-left: 10px;
+    height: 60vh;
+    background-color: rgba(0, 167, 65, 0.7)
+}
+
+/*estilos educacion*/
+.educacion {
+    background-image: url(https://fondosmil.com/fondo/70310.jpg);
+    width: 100%;
+    height: auto;
+    padding: 20px;
     position: relative;
-    border-radius :32px;
+
+
+}
+
+.info-educacion {
+    width: 100%;
+    height: 10rem;
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    color: white;
+
+}
+
+
+.titulo {
+    width: 30%;
+    height: 10rem;
+    margin: 0px;
+    position: absolute;
+    border-right: 2px solid black;
+    background-color: rgba(0, 167, 65, 0.7);
+    left: 0px;
+    padding: 10px;
+}
+
+.descripcion {
+    position: absolute;
+    border: 2px solid black;
+    background-color: rgba(0, 167, 65, 0.7);
+    height: 10rem;
+    width: 70%;
+    right: 0px;
+    padding: 10px;
+}
+
+/*estilos experiencia laboral*/
+.experiencia-laboral {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://us.123rf.com/450wm/sdecoret/sdecoret1611/sdecoret161100067/65189865-mano-dibujada-presentaci%C3%B3n-de-proyecto-sobre-fondo-azul.jpg?ver=6);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+.info-experiencia {
+    width: 100%;
+    height: 10rem;
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    color: white;
+
+}
+
+/*Botones de editar y eliminar*/
+.botones {
+    width: 20%;
+    height: 20vh;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+}
+
+.descripcion button {
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+}
+
+/*boton de añadir +*/
+.btn-dark {
+    position: absolute;
+    right: 0px;
+    margin: 20px 20px;
+}
+
+.editar {
+    position: absolute;
+    right: 50px;
+    background-color: #198754;
+}
+
+/*boton eliminar*/
+.eliminar {
+    background-color: red;
+    right: 10px;
+}
+
+/*estilos skills*/
+.skills {
+    background-image: url(https://t4.ftcdn.net/jpg/03/63/74/37/240_F_363743726_gE1WnBWj6whjHO783zpq52kJ8iooie8E.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+/*estilos de proyecto*/
+.proyectos {
+    background-image: url(http://blog.aulaformativa.com/wp-content/uploads/2016/06/fondos-de-pantalla-para-programadores-MatrixWallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    border: solid 2px black;
+
+}
+
+.proyecto {
+    width: 20%;
+    height: 50vh;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.imagen {
+    border: 2px solid blue;
+    height: 50%;
+    margin: 10px 10px 0px;
+    position: relative;
+
+}
+
+.imagen img {
+    width: 100%;
+}
+
+.info-proyecto {
+    border: 2px solid blue;
+    margin: 0px 10px;
+    margin-top: 0px;
+    height: 45%;
+    text-align: center;
+    color: white;
+}
+
+.capa {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 75, 50, 0.7);
+    color: red;
+    position: absolute;
+    z-index: 1;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.capa:hover {
+    visibility: visible;
+
+}
+
+/*estilos de Modal*/
+.edicion {
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-abstracto-technologico-lineas-conectividad_1048-5570.jpg?w=740&t=st=1663562257~exp=1663562857~hmac=3b7d07b4615963762659d639b3ac1325817d6b3d1f0c125905d874754e18c1f3);
+    width: 100%;
+    height: 100vh;
+position: relative;
+}
+
+.mat-card {
+    width: 50%;
+    right: 25%;
+    float: right;
+    background-color: rgba(0, 175, 0, 0.7);
+    padding: 30px;
+    margin-top:30px;
+}
+
+/*boton de ir arriba*/
+#botonArriba {
+    width: 60px;
+    height: 60px;
+    background: #46a2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border: 4px solid transparent;
+}
+
+#botonArriba:hover {
+    transform: scale(1.1);
+    border-color: rgba(0, 0, 0, 0.1);
+    transition: all 300ms ease;
+}
+
+@media(max-width:1200px) {
+
+    .titulo {
+        width: 50%;
     }
-    
-    video{
+
+    .descripcion {
+        width: 50%;
+        overflow: auto;
+    }
+
+    #editar {
+        position: fixed;
+    }
+
+    #eliminar {
+        position: fixed;
+    }
+
+    .botones {
         width: 100%;
-        height: 100%;
-        border-radius: 6px;
+        height: 10vh;
     }
-    
-    div#foto-perfil{
-       
-        height: 100%;
-    }
-    div#foto-perfil img{
-        width: 18%;
-        height:25%;
-        border-radius: 50%;
+    .info{
+        width:100%;
+        height:auto;
         position:absolute;
-        top:63%;
-        left:2%;
+        top:45px;
+        padding:10px;
+        right: 0px;
     }
-    .btn-edit#foto-perfil{
-        position: absolute;
-        left: 25%;
-       top:79%;
+
+    .btn-dark{
+        top:-15px;
         z-index:1;
     }
 
-    .btn-edit#video{
-        position:absolute;
-        left:95%;
-        top:5%;
-        z-index: 1;
-    }
-    #Cerrar{
-        position: absolute;
+    .mat-card {
+        float: right;
+        right: 25%;
         width: 100%;
-        margin-bottom: 5px;
-        margin: 0px;
-        height: 10%;
-        top: 5px;
-        left: 0;
-     }
-     #cancelar{
-       position: absolute;
-       right: 10px;
-     }
-     
-     form{
-        margin-top: 50px;
-     
-     }
-     label{
-        font-size: 15px;
-        color: white;
-     }
+        background-color: rgba(0, 175, 0, 0.7);
+        padding: 30px;
+    }  
+
+}
 

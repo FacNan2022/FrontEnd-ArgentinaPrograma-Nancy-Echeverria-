@@ -1,3 +1,10 @@
+.container {
+    padding: 0px 0px;
+    display: flex;
+}
+
+
+
 /*Efecto*/
 .modalmask {
     position: fixed;
@@ -60,6 +67,7 @@
     height:200px;
 }
 
+
 /*Boton de cerrar*/
 .close {
     background: #606061;
@@ -79,4 +87,13 @@
 .close:hover {
     background: #FAAC58;
     color:#222;
+}
+@media(max-width:800px){
+    #experiencia{
+        padding:10px;
+    }
+    .container{
+        margin-top:35px;
+    }
+
 }

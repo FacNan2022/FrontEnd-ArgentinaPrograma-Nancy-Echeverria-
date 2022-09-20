@@ -1,47 +1,34 @@
-<div class="card mat-card" @enterState id="Educacion">
-<div class="row">
-    <h1>Educación</h1>
-    <div class="col-lg-2">
-        <button type="button" class="btn btn-dark" *ngIf="isLogged" routerLink="nuevaeducacion">
-            Nueva Educación
-        </button>
+<div class="educacion" id="educacion"@enterState >
+  <button type="button" class="btn btn-dark" *ngIf="isLogged" routerLink="nuevaeducacion">
+    <i class="fa-solid fa-plus"></i>
+</button>
+<section id="contenido-educacion" *ngFor="let Educacion of edu">
+  <div class="info-educacion container" >   
+    <div class="titulo" >
+      <h2>{{Educacion.institucion}}</h2>
+      <h2>{{Educacion.titulo}}</h2>
+      
     </div>
 
-    <div class="col lg 1"></div>
-    <div class="col-lg-11"  >
-        <table class="table">
-        <tbody>
-            <tr  *ngFor="let Educacion of edu">
-                <td>
-                    <h2>{{Educacion.institucion}}</h2>
-                </td>
-                <td>
-                    <h2>{{Educacion.titulo}}</h2>
-                </td>
-                <td>
-                    <h2>{{Educacion.orientacion}}</h2>
-                </td>
-                <td>
-                    <h2>{{Educacion.fechaInicio}}</h2>
-                </td>
-                <td>
-                    <h2>{{Educacion.fechaFinalizacion}}</h2>
-                </td>
-                <td *ngIf="isLogged">
-                    <button class="btn btn-light" routerLink="/editeducacion/{{Educacion.id}}">
-                        <i class="bi bi-pencil-fill"></i></button>
-                    
-                </td>
-                <td *ngIf="isLogged">
-                    <button class="btn btn-danger" (click)="delete(Educacion.id)">
-                        <i class="bi bi-trash-fill"></i></button>
-                    
-                </td>
-               
-            </tr>
-        </tbody>
-    </table>
+    <div class="descripcion" >
+      <div class="info">
+        <h2>{{Educacion.fechaInicio}}/{{Educacion.fechaFinalizacion}}</h2>
+        <h2>{{Educacion.orientacion}}</h2>
+      </div>
+    
+    <div class="botones">
+     
+        <button class="editar" routerLink="/editeducacion/{{Educacion.id}}"*ngIf="isLogged">
+        <i class="bi bi-pencil-fill"></i></button>
+  
+       <button class="eliminar" (click)="delete(Educacion.id)"*ngIf="isLogged">
+        <i class="bi bi-trash-fill"></i></button>
+       
     </div>
+    
+  </div>
+  </div>
 
+</section>
 </div>
-</div>
+    

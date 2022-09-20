@@ -1,0 +1,36 @@
+/*estilos skills*/
+.skills {
+    background-image: url(https://t4.ftcdn.net/jpg/03/63/74/37/240_F_363743726_gE1WnBWj6whjHO783zpq52kJ8iooie8E.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+    color: white;
+    padding: 20px;
+}
+.btn-dark{
+    z-index: 2;
+}
+.botones{
+    width: 15%;
+    height: auto;
+    left: 250px;
+    position: absolute;
+    top: 75px;
+}
+.botones button{
+    border-radius: 50%;
+    
+}
+
+.editar{
+    right: 60px;
+}
+#skill-rotate{
+    transition: 4s;
+}
+#skill-rotate:hover{
+    transform: scale(1.5);
+
+}

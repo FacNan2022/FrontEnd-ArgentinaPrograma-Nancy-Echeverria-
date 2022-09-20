@@ -1,0 +1,80 @@
+
+.contacto{
+    height: 100vh;
+    background-image: url(https://media.istockphoto.com/photos/digital-numbers-flowing-in-a-digital-high-tech-environment-picture-id1263886233?b=1&k=20&m=1263886233&s=170667a&w=0&h=Z77dVX0gEmJmZpae1WkzZbvpPgzeZj5-NdTEXKxBLRQ=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin: 0 auto;
+    padding: 140px;
+}
+
+.contact {
+    max-width: 900px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #bbb;
+   
+}
+
+.container p{
+    margin-top: 25%;
+    font-size: 20px;
+    
+    
+}
+
+
+h2.contact-title {
+    color: var(--heading-sec-color);
+    font-size: clamp(40px, 5vw, 60px);
+}
+
+.email-link {
+    color: whitesmoke;
+    background-color: transparent;
+    padding: 1rem 1.75rem;
+    font-size: var(--f-md);
+    border-radius: 4px;
+    font-family: var(--text-font-family);
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid;
+    background: blue;
+    padding: 0.7rem;
+    
+}
+    a {
+      text-align: center;
+    }
+    :hover {
+      cursor: pointer;
+    }
+  
+
+.btn-email {
+    margin-top: 50px;
+}
+
+@media(max-width:800px){
+    .contacto{
+        width:100%;
+        position: relative;
+        
+    
+    }
+    section{
+        width: 100%;
+        position: absolute;
+        left:0px;
+    }
+    .contact{
+        width:100%;
+       
+    }
+   
+}

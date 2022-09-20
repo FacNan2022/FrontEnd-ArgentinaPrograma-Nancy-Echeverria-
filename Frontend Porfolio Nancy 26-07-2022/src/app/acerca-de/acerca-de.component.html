@@ -1,11 +1,33 @@
-<div class="card mat-card" id="secondcard" @enterState>
-    
-    <h1>Acerca de </h1>
-    <H2>Habilidades técnicas</H2>
+<div class="fondo"@enterState>
 
-    <p>Full Stack Developer junior</p>
- 
-    <P>Html,Css,JavaScript,Angular,PhP,MySQL</P>
-    <H2>Habilidades blandas</H2>
-    <p>Trabajo en equipo,Responsabilidad,Flexibilidad,Creatividad,Comunicación,Compromiso,Honestidad,inteligencia emocional,Resilencia</p>
-</div> 
+    <div id="Acerca-de-Mi">
+
+        <div class="foto-perfil">  
+        
+        
+          <img src="{{persona.img}}">
+
+          <button id="btnEdicion" *ngIf="isLogged" class="btn btn-light" routerLink="editpersona/{{persona.id}}">
+            <i class="bi bi-pencil-fill"></i> </button>
+
+            <div id="nombre">
+              <h1>{{persona.nombre}} {{persona.apellido}}</h1>
+              <p>{{persona.ubicacion}}</p>
+
+            </div>
+        
+            <div id="manoTransparente"><img src=".././../assets/robot-humano_53876-90440-removebg-preview.png" alt="" width="100%"></div>
+            
+        </div>
+        
+        <div class="informacion">
+          <h2>Acerca de mí</h2>
+          <p>{{persona.descripcion}}</p>
+        </div>
+        
+        
+        </div>
+</div>
+
+
+

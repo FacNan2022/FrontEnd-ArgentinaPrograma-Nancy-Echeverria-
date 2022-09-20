@@ -1,9 +1,69 @@
+/*estilos footer*/
+.footer {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/001/632/448/small/dark-blue-stripes-geometric-overlapping-background-free-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
 
-footer{
-    color:black;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
+#imagenFooter {
+    top: 10%;
+    position: relative;
+    width: 40%;
+    height: 50vh;
+    margin: 0px auto;
+    left: 0px;
+    background-color: rgba(0,167, 65, 0.7);
+    border: 2px solid blue;
     text-align: center;
-    box-shadow: 2px -2px 5px #999 ;
+    border-radius: 20px;
+
+}
+
+#imagenFooter img {
+    width: 70%;
+    position: relative;
+    margin-top: 30px;
+}
+
+#btn-subir{
+    background: inherit;
+    border-radius: 50%;
+    border: 0px;
+}
+.gracias{
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 40vh;
+    position: absolute;
+    bottom: 0px;
+   left: 35%;
+}
+
+@media(max-width:800px){
+    #botonArriba{
+        border:2px red solid;
+        bottom:20%;
+        z-index: 1;
+    }
+
+    #imagenFooter{
+        width: 100%;
+
+    }
+
+    .gracias{
+        width: 100%;
+        left: 0px;
+        padding: 30px;
+        position: absolute;
+        border: 2px solid black;
+    }
+    .gracias img{
+        width: 100%;
+        
+    }
 }

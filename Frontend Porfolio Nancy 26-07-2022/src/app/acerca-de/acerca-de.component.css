@@ -1,0 +1,134 @@
+/*codigos del main*/
+main {
+    width: 100%;
+    position: relative;
+
+}
+
+.fondo {
+    background-image: url(https://img.freepik.com/vector-gratis/robot-humano_53876-90440.jpg?w=740&t=st=1662168002~exp=1662168602~hmac=58351af829e29d7b483e914d33eafa6db808a83184299eb868970b0c9661bf44);
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Acerca-de-Mi {
+    width: 100%;
+    position: absolute;
+    border: 2px solid blue;
+    top: 70px;
+    display: flex;
+}
+
+.foto-perfil {
+    width: 40%;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+#btnEdicion {
+    position: relative;
+    right: 0px;
+    bottom: -137px;
+    z-index: 2;
+    border-radius: 50%;
+    background: #46a2fd;
+}
+
+.foto-perfil img {
+    border-radius: 50%;
+    width: 50%;
+    left: 50px;
+    top: 30px;
+    position: relative;
+}
+
+#manoTransparente {
+    width: 90%;
+    height: 100%;
+    top: -122px;
+    left: -6%;
+    position: absolute;
+    z-index: 1;
+
+
+}
+
+#manoTransparente img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.informacion {
+    width: 60%;
+    border: 2px solid black;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    height: 60vh;
+    border-radius: 20px;
+}
+
+#nombre {
+    width: 50%;
+    padding: 5px;
+    height: 30vh;
+    color: white;
+    position: relative;
+    left: 54px;
+    top: 30px;
+    text-align: center;
+
+
+}
+
+@media(max-width:1200px) {
+    #Acerca-de-Mi {
+        display: inline-block;
+        height: 100%;
+        top: 0px;
+        padding: 10px;
+    }
+
+    .informacion {
+        position: relative;
+        width: 100%;
+        height: 30vh;
+        overflow: visible;
+        margin-left: 1px;
+        border: 3px solid black;
+        top: 40%;
+        height: auto;
+    }
+
+    .foto-perfil {
+        z-index: 1;
+        width: 100%;
+        top: 0px;
+        right: 0px;
+    }
+    .foto-perfil img{
+        position: relative;
+        left:25%;
+    }
+
+    #btnEdicion{
+        right:5%;
+        bottom:-100px;
+    }
+
+    #nombre {
+        width: 100%;
+        left: 0px;
+
+    }
+}

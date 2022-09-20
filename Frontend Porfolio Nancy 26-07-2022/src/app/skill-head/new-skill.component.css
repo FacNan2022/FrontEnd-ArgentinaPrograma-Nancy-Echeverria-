@@ -6,3 +6,17 @@
  right:25%;
    width:  50%;
 }
+
+@media(max-width:1200px){
+    .edicion{
+       padding: 10px;
+       position: relative;
+    }
+   .mat-card{
+    width: 94%;
+    right: 11px;
+    position: absolute;
+   
+   }
+ }
+ 

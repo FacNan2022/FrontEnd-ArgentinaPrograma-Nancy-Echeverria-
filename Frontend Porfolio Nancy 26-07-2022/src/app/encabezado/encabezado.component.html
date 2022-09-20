@@ -1,21 +1,50 @@
-<div class="card mat-card" id="firstcard" @enterState>
+<header id="encabezado">
+ 
+    <div class="portada">
+
+      <img
+        src="https://img.freepik.com/fotos-premium/transformacion-digital-conceptual-era-tecnologica-proxima-generacion_109643-131.jpg?size=626&ext=jpg&ga=GA1.2.731408403.1659461106"
+        alt="foto de presentación">
+
+    </div>
+  
+    <div class="texto-imagen ">
+      <div class="redes">
+        <a href="https://www.facebook.com/nancy.echeverria.56">
+          <img
+            src="https://w7.pngwing.com/pngs/670/159/png-transparent-facebook-logo-social-media-facebook-computer-icons-linkedin-logo-facebook-icon-media-internet-facebook-icon.png"
+            width="50px" height="40px" id="facebook">
+        </a>
+        <a href="https://github.com/FacNan2022">
+          <img
+            src="https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head.png"
+            width="50px" height="40px" id="github">
+        </a>
+  
+        <a href="https://www.linkedin.com/in/nancy-echeverria-8b66ab23b/"><img id="linkedin"
+            src="https://w7.pngwing.com/pngs/155/954/png-transparent-linkedin-business-marketing-social-networking-service-job-company-profile-company-text-trademark.png"
+            width="100px" height="40px"></a>
+      </div>
+
+      <div class="tituloPrincipal">
+        <h1 class="animate__animated animate__lightSpeedInRight">Bienvenido a mi Portfolio</h1>
+      </div>
     
-    <div id="portada" >
-       
-        <div id="video">
-          <video autoplay="autoplay" source src="{{persona.portada}}" type="video/mp4" ></video>
-          
-        </div>
-        <button id="btnEdicion" *ngIf="isLogged" class="btn btn-light" routerLink="editpersona/{{persona.id}}">
-            <i class="bi bi-pencil-fill"></i> </button>
+      
+      
+    <div class="botonesDireccion">
+
+      <a href="#Acerca-de-Mi"> <button class="btn btn-success">
+        Acerca de Mí
+      </button></a>
+      <a href="#educacion"><button class="btn btn-success">Educacion</button></a>
+      <a href="#experiencia"><button class="btn btn-success">Experiencia</button></a>
+      <a href="#skills"><button class="btn btn-success">Skills</button></a>
+      <a href="#proyectos"><button class="btn btn-success">Proyectos</button></a>
+      <a href="#contacto"><button class="btn btn-success">Contacto</button></a>
+      <a href="#footer"><button class="btn btn-success">Footer</button></a>
     </div>
-    <div id="foto-perfil" >
-        <img src="{{persona.img}}">
-    </div>
-    <div id="info-perfil">
-        <h1> {{persona.nombre}} {{persona.apellido}}</h1>
-        <h3>{{persona.ubicacion}}</h3>
-       
-    </div>
-   
-</div>
+
+  </div>
+
+  </header>

@@ -1,35 +1,31 @@
-
-<div class="card mat-card" id="Experiencia"@enterState >
-    <div class="row">
-        <h1>Experiencia Laboral</h1>
-        <div class="col-lg -2">
-            <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">Nueva Experiencia</button>
+<div class="experiencia-laboral" id="experiencia" @enterState>
+  <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged"><i class="fa-solid fa-plus"></i>
+  </button>
+  <section *ngFor="let Experiencia of expe" >
+    <div class="info-experiencia container" >
+      <div class="titulo">
+        <h2>{{Experiencia.nombreE}}</h2>
+        <h3>{{Experiencia.puesto}}</h3>
+        
+  
+      </div>
+  
+      <div class="descripcion">
+        <div class="info">
+          <h2>{{Experiencia.fechaInicio}}/{{Experiencia.fechaFinalizacion}}</h2>
+          <p>{{Experiencia.descripcionE}}</p>
         </div>
+
+        
+        <div class="botones" *ngIf="isLogged">
+          <button class="editar" routerLink="/editexp/{{Experiencia.id}}">
+            <i class="bi bi-pencil-fill"></i></button>
+          <button  class="eliminar" (click)="delete(Experiencia.id)">
+            <i class="bi bi-trash-fill"></i> </button>
+        </div>
+      </div>
     </div>
-   
-    <div class="col lg 1">
-   <div class="col-lg-11" >
-    <table class="table">
-        <tbody>
-            <tr *ngFor="let Experiencia of expe">
-                <td>
-                    <h2>{{Experiencia.nombreE}}</h2>
-                </td>
-                <td>{{Experiencia.descripcionE}}</td>
-                <td *ngIf= "isLogged"> 
-                    <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
-                        <i class="bi bi-pencil-fill"></i></button>
-                   
-                </td>
-                <td *ngIf="isLogged">
-                    <button class="btn btn-danger" (click)="delete(Experiencia.id)">
-                        <i class="bi bi-trash-fill"></i> </button>
-                    
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    
-
-
+  
+  </section>
+ 
 </div>

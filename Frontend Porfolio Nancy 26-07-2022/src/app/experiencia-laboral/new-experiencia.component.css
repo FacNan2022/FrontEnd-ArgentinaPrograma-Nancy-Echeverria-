@@ -5,3 +5,15 @@
    height: 100%;
    position:absolute;
 }
+@media(max-width:1200px){
+   .edicion{
+      padding: 10px;
+      position: relative;
+   }
+  .mat-card{
+   width: 94%;
+   right: 11px;
+   position: absolute;
+  
+  }
+}

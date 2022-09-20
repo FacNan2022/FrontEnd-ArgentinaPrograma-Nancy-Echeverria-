@@ -1,41 +1,32 @@
-<div class="card mat-card" id="Proyectos" @enterState>
-    <div class="row">
-        <h1>Mis Proyectos</h1>
-        <div class="col-lg -2">
-            <button type="button" class="btn btn-dark" routerLink="/nuevoproyecto" *ngIf="isLogged">Nuevo Proyecto</button>
-        </div>
-    </div>
-    <div class="col lg 1">
-        <div class="col-lg-11">
-         <table class="table">
-             <tbody>
-                 <tr *ngFor="let Proyectos of pro">
-                     <td>
-                         <h2>{{Proyectos.nombre}}</h2>
-                     </td>
-                     <td>{{Proyectos.descripcion}}</td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
 
-                     <td><a href="{{Proyectos.link}}"><img src="{{Proyectos.imagen}}" width="50%"></a> </td>
-                     <td *ngIf= "isLogged"> 
-                         <button class="btn btn-light" routerLink="/editproyectos/{{Proyectos.id}}">
-                             <i class="bi bi-pencil-fill"></i></button> 
-                     </td>
-                     <td></td>
-                     <td *ngIf="isLogged">
-                         <button class="btn btn-danger" (click)="delete(Proyectos.id)">
-                             <i class="bi bi-trash-fill"></i> </button>
-                         
-                     </td>
-                 </tr>
-             </tbody>
-         </table>
-         
+    <div class="proyectos" id="proyectos"@enterState>
+      <button type="button" class="btn btn-dark" routerLink="/nuevoproyecto" *ngIf="isLogged"><i class="fa-solid fa-plus"></i></button>
+        <div class="listaProyectos">
+  
+          <div class="proyecto"*ngFor="let Proyectos of pro">
+ 
+            <div class="imagen">
+              <div class="botones"*ngIf= "isLogged">
+                <button class="editar" routerLink="/editproyectos/{{Proyectos.id}}">
+                  <i class="bi bi-pencil-fill"></i></button> 
+                  <button class="eliminar" (click)="delete(Proyectos.id)">
+                    <i class="bi bi-trash-fill"></i> </button>
+              </div>
+              <a href="{{Proyectos.link}}"><img
+                  src="{{Proyectos.imagen}}"
+                  alt=""></a>
+            </div>
+  
+            <div class="info-proyecto">
+              <h1>{{Proyectos.nombre}}</h1>
+              <p>{{Proyectos.descripcion}}</p>
+            </div>
+  
+          </div>
+       
+        </div>
+  
+      </div>
      
      
-     </div>
+    
