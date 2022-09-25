@@ -8,9 +8,8 @@ import { Educacion } from '../Model/educacion';
   providedIn: 'root'
 })
 export class SEducacionService {
-  private apiServerUrl=environment.apiBaseUrl;
   [x: string]: any;
-  URL = 'http://localhost:8080/edu/';
+  URL = ' https://bakendargentinaprograma.herokuapp.com/edu/';
 
   constructor(private httpClient: HttpClient) { }
 

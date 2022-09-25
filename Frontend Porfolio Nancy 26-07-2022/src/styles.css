@@ -140,7 +140,7 @@ main {
 /*estilos experiencia laboral*/
 .experiencia-laboral {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-image: url(https://us.123rf.com/450wm/sdecoret/sdecoret1611/sdecoret161100067/65189865-mano-dibujada-presentaci%C3%B3n-de-proyecto-sobre-fondo-azul.jpg?ver=6);
     position: relative;
     background-repeat: no-repeat;
@@ -349,9 +349,14 @@ main {
         padding: 30px;
     }
 
-    .tituloPrincipal{
+    .tituloPrincipal {
         position: relative;
-        left:113px;
+        left: 0px;
+        width: 40%;
     }
 
+    #manoTransparente[_ngcontent-qfo-c69] img[_ngcontent-qfo-c69] {
+        width: 93%;
+        height: 100%;
+    }
 }

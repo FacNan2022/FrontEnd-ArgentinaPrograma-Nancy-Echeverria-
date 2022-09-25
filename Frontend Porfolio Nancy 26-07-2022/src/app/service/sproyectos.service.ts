@@ -8,7 +8,7 @@ import { Proyectos } from '../Model/proyectos';
 })
 export class SProyectosService {
   [x: string]: any;
-  URL = 'http://localhost:8080/proyectos/';
+  URL = ' https://bakendargentinaprograma.herokuapp.com/proyectos/';
   constructor(private httpClient: HttpClient) { }
 
   public lista ():Observable<Proyectos[]>{

@@ -8,7 +8,7 @@ import { LoginUsuario } from '../Model/login-usuario';
   providedIn: 'root'
 })
 export class AuthServiceService {
-  authURL = 'http://localhost:8080/auth/';
+  authURL = 'https://bakendargentinaprograma.herokuapp.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 
