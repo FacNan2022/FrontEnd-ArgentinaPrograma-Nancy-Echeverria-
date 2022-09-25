@@ -16,8 +16,9 @@
         padding:10px;
     }
   
-    .titulo{
+    .titulo {
         width: 50%;
+        overflow: scroll;
     }
     .descripcion{
         width:50%;
@@ -32,7 +33,7 @@
 
     .tituloPrincipal{
         position: relative;
-        left:113px;
+        left:8px;
     }
 }
 

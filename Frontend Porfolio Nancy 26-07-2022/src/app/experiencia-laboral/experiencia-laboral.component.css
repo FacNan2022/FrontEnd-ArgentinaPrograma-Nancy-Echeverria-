@@ -4,7 +4,7 @@
     margin-top: 20px;
 }
 
-.tituloPrincipal strong{
+.tituloPrincipal strong {
     color: white;
 }
 
@@ -18,58 +18,63 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 99999;
-    opacity:0;
+    opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
 }
+
 .modalmask:target {
-    opacity:1;
+    opacity: 1;
     pointer-events: auto;
 }
 
 /*Formato de la ventana*/
-.modalbox{
+.modalbox {
     width: 400px;
     position: relative;
     padding: 5px 20px 13px 20px;
     background: #fff;
-    border-radius:3px;
+    border-radius: 3px;
     -webkit-transition: all 500ms ease-in;
     -moz-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
-     
+
 }
 
 /*Movimientos*/
 .movedown {
     margin: 0 auto;
 }
+
 .rotate {
     margin: 10% auto;
-    -webkit-transform: scale(-5,-5);
-    transform: scale(-5,-5);
+    -webkit-transform: scale(-5, -5);
+    transform: scale(-5, -5);
 }
+
 .resize {
     margin: 10% auto;
-    width:0;
-    height:0;
- 
+    width: 0;
+    height: 0;
+
 }
-.modalmask:target .movedown{       
-    margin:10% auto;
+
+.modalmask:target .movedown {
+    margin: 10% auto;
 }
-.modalmask:target .rotate{     
-    transform: rotate(360deg) scale(1,1);
-        -webkit-transform: rotate(360deg) scale(1,1);
+
+.modalmask:target .rotate {
+    transform: rotate(360deg) scale(1, 1);
+    -webkit-transform: rotate(360deg) scale(1, 1);
 }
- 
-.modalmask:target .resize{
-    width:400px;
-    height:200px;
+
+.modalmask:target .resize {
+    width: 400px;
+    height: 200px;
 }
 
 
@@ -85,23 +90,31 @@
     width: 24px;
     text-decoration: none;
     font-weight: bold;
-    border-radius:3px;
- 
+    border-radius: 3px;
+
 }
- 
+
 .close:hover {
     background: #FAAC58;
-    color:#222;
+    color: #222;
 }
-@media(max-width:800px){
-    #experiencia{
-        padding:10px;
+
+@media(max-width:800px) {
+    .titulo {
+        width: 50%;
+        overflow: scroll;
     }
-    .container{
-        margin-top:35px;
+
+    #experiencia {
+        padding: 10px;
     }
-    .tituloPrincipal{
+
+    .container {
+        margin-top: 35px;
+    }
+
+    .tituloPrincipal {
         position: relative;
-        left:113px;
+        left: 8px;
     }
 }

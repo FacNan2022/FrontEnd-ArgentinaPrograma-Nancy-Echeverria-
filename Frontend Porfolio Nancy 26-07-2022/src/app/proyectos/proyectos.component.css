@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: auto;
     border: solid 2px black;
 
 }
@@ -16,6 +16,9 @@
 .listaProyectos {
     margin-top: 30px;
     display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
 }
 
 .proyecto {
@@ -67,7 +70,7 @@
 
 .info-proyecto {
     
-    overflow: visible;
+    overflow: scroll;
     padding: 10px;
     border: 2px solid blue;
     margin: 0px 10px;
