@@ -8,7 +8,7 @@ import { Skills } from '../Model/skills';
 })
 export class SerSekillsService {
   [x: string]: any;
-  URL = ' https://bakendargentinaprograma.herokuapp.com/skill/';
+  URL = 'https://bakendargentinaprograma.herokuapp.com/skill/';
   constructor(private httpClient: HttpClient) { }
   public lista ():Observable<Skills[]>{
     return this.httpClient.get<Skills[]>(this.URL + 'lista');

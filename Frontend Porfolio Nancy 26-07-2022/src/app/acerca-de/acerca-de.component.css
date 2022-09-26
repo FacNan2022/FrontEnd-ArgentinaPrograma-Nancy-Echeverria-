@@ -1,4 +1,4 @@
-/*codigos del main*/
+
 /*codigos del main*/
 main {
     width: 100%;
@@ -48,6 +48,18 @@ main {
     position: relative;
 }
 
+#nombre {
+    width: 50%;
+    padding: 5px;
+    height: 30vh;
+    color: #fff;
+    position: relativ;
+    left: 42px;
+    top: 286px;
+    text-align: center;
+    position: absolute;
+}
+
 #manoTransparente {
     width: 90%;
     height: 100%;
@@ -55,8 +67,6 @@ main {
     left: -6%;
     position: absolute;
     z-index: 1;
-
-
 }
 
 #manoTransparente img {
@@ -108,17 +118,7 @@ main {
     left: 155px;
 }
 
-#nombre {
-    width: 50%;
-    padding: 5px;
-    height: 30vh;
-    color: #fff;
-    position: relativ;
-    left: 42px;
-    top: 286px;
-    text-align: center;
-    position: absolute;
-}
+
 
 
 
