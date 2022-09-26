@@ -92,3 +92,12 @@
         left: 14px;
       }
 }
+
+@media (max-width:1200px){
+    .tituloPrincipal h1{
+        left: 323px;
+        width: 100%;
+        position: absolute;
+    }
+
+}
