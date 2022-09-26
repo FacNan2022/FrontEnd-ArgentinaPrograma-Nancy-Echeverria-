@@ -63,12 +63,14 @@
     }
     .redes {
         display: block;
-        width: 100%;
+        width: 82%;
         height: 10vh;
         top: 5px;
-        left:22px;
+        left: 25px;
         position: relative;
         margin: 0 auto;
+        border:green solid 2px;
+        background-color: rgba(0,167, 65, 0.7)
       
     }
 

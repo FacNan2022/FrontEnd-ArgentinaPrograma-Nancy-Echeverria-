@@ -69,3 +69,9 @@
         
     }
 }
+
+@media(max-width:1200px){
+    .gracias{
+        left: 30%;
+    }
+}
