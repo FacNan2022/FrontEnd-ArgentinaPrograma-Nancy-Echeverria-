@@ -60,6 +60,11 @@ h2.contact-title {
     margin-top: 50px;
 }
 
+.linkedin{
+    width: 30%;
+    height: 30vh;
+    border: 2px solid red;
+}
 @media(max-width:800px){
     .contacto{
         width:100%;

@@ -79,20 +79,56 @@ main {
     border-radius: 20px;
 }
 
+.animacion {
+    width: 56%;
+    height: 31vh;
+    position: absolute;
+    bottom: 32px;
+    margin: 0 auto;
+    left: 271px;
+    border-radius: 10px;
+    box-shadow: 15px 5px 10px green;
+    border: 2px solid green;
+
+}
+
+.animacion img {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.animacion strong {
+    position: absolute;
+    z-index: 1;
+    color: green;
+    bottom: 5px;
+    left: 155px;
+}
+
 #nombre {
     width: 50%;
     padding: 5px;
     height: 30vh;
-    color: white;
-    position: relative;
-    left: 54px;
-    top: 30px;
+    color: #fff;
+    position: relativ;
+    left: 42px;
+    top: 286px;
     text-align: center;
-
-
+    position: absolute;
 }
 
+
+
+
 @media(max-width:900px) {
+    .fondo {
+        height: 138vh;
+        position: relative;
+    }
+
     #Acerca-de-Mi {
         display: inline-block;
         height: 100%;
@@ -131,7 +167,8 @@ main {
 
     #nombre {
         width: 100%;
-        left: 0px;
+        left: 5px;
+        top: 212px;
 
     }
 
@@ -139,6 +176,22 @@ main {
         width: 90%;
         height: 100%;
         top: -11px;
-       
+
+
+    }
+
+    .animacion {
+        left: 15px;
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .animacion strong {
+        position: absolute;
+        z-index: 1;
+        color: green;
+        bottom: 5px;
+        left: 26px;
+        width: 100%;
     }
 }

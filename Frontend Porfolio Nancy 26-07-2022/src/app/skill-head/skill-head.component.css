@@ -6,8 +6,12 @@
     width: 100%;
     height: auto;
     position: relative;
-    color: white;
+    color: #198754;
     padding: 20px;
+}
+
+.titulo-skill{
+    color: white;
 }
 .btn-dark{
     z-index: 2;

@@ -86,4 +86,9 @@
     .textoImagen h1 {
         margin-left: 20px;
     }
+
+    #github{
+        position: relative;
+        left: 14px;
+      }
 }
