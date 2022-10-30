@@ -67,6 +67,7 @@
 }
 
 .animacion {
+    background-color: rgba(0, 0, 0, 0.5);
     width: 56%;
     height: 31vh;
     margin: 0 auto;
@@ -82,15 +83,15 @@
 
 .animacion img {
     width: 100%;
-    height: 100%;
-    top: 0px;
+    height: 76%;
     left: 2px;
    position: absolute;
     border-radius: 10px;
+    z-index: 0;
 }
 
 .animacion strong {
-    z-index: 1;
+    z-index: 2;
     color: green;
     bottom: 5px;
   
