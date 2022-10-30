@@ -48,7 +48,7 @@
         left: 30%;
     }
 
-    @media(max-width:800px) {
+    @media(max-width:600px) {
         #botonArriba {
             border: 2px red solid;
             bottom: 20%;
@@ -58,19 +58,28 @@
         }
 
         .imagenFooter {
-            width: 100%;
+            width: 88%;
         }
 
         .gracias {
+            display: flex;
+            justify-content: center;
             left: 3px;
             padding: 30px;
             position: absolute;
             width: 100%;
         }
 
-        .gracias img {
-            width: 100%;
-
+        .gracias img{
+            width: 40%;
+            text-align: center;
+            top: 35px;
+            position: relative;
+        }
+        @media(max-width:368px){
+            .gracias img{
+                top: 5px;
+            }
         }
     }
 }

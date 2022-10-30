@@ -3,20 +3,20 @@
     <section class="acercaDe__informacion">   
             <div class="acercaDe__informacion--biografia">
               <h1>Acerca de mí</h1>
-              <p>{{persona.descripcion}}</p>
+              <p>Mi nombre es Nancy Echeverria, soy estudiante de Programación, me gusta aprender y trabajar en equipo, soy una persona responsable que se adapta en todo ambiente de trabajo, aportar ideas y soluciones a diferentes problemáticas, soy proactiva y me gustaría tener oportunidades de desarrollar mis habilidades técnicas y blandas para obtener más experiencia y poder trabajar en una empresa para ser parte de su equipo .</p>
             </div>    
             <div class="acercaDe__informacion--perfil">
               <div class="acercaDe__informacion--mano-transparente">
                 <img id="mano-transparente" src=".././../assets/robot-humano_53876-90440-removebg-preview.png" alt="" width="100%">
               </div>
             
-               <img id="foto-perfil" src="{{persona.img}}">
+               <img id="foto-perfil" src="https://media-exp1.licdn.com/dms/image/C4D03AQEfYwpnG17kKA/profile-displayphoto-shrink_800_800/0/1663359091404?e=1672876800&v=beta&t=tFkC_w8nJHtJ5DS9PMOY4KwPsqdXG_6iLQhM7vK5sAw">
             
                <article class="info-perfil">
                <button id="btnEdicion" class="btn btn-light" *ngIf="isLogged" routerLink="editpersona/{{persona.id}}">
                 <i class="bi bi-pencil-fill"></i> </button>
-                <h1>{{persona.nombre}}</h1>
-                <p>{{persona.ubicacion}}</p>
+                <h1>Nancy Echeverria</h1>
+                <p>La Plata, Buenos Aires, Argentina</p>
                </article>
                
              </div>

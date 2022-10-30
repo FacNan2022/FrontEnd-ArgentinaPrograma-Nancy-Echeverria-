@@ -96,10 +96,35 @@
   
 }
 
-
-@media(max-width:600px) {
+@media(max-width:600px){
     .acercaDe{
-        height: 130vh;
+        height: 150vh;
+    }
+    .acercaDe__informacion {
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: center;  
+    }
+    .acercaDe__informacion--perfil #foto-perfil {
+        border-radius: 50%;
+        width: 200px;
+        margin-top: 4px;
+        position: absolute;
+    }
+    .acercaDe__informacion--perfil #mano-transparente{
+        position: relative;
+        z-index: 1;
+        left: 9rem;
+        margin-top: 18px;
+    }
+
+    #mano-transparente{
+        margin-top: 18px;
+    }
+
+@media(max-width:368px) {
+    .acercaDe{
+        height: 145vh;
     }
 
     .acercaDe__informacion {
@@ -107,6 +132,8 @@
     }
 
     .acercaDe__informacion--biografia {
+        bottom: 45px;
+        position: relative;
         width: 100%;
     }
 
@@ -121,7 +148,7 @@
     .info-perfil {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
         text-align: center;
 
     }
@@ -129,8 +156,9 @@
 
     #foto-perfil {
         position: relative;
-        text-align: center;
-        top: 10px;
+        left: 12px;
+        bottom: 130px;
+        width: 189px;
     }
 
     #btnEdicion {
@@ -139,8 +167,10 @@
     }
 
     .animacion {
-        width: 95%;
+        bottom: 30px;
+        width: 88%;
         left: 0px;
+        position: relative;
         top: 0px;
     }
 
@@ -152,5 +182,6 @@
         margin-top: 0px;
       }
     
+}
 }
 }

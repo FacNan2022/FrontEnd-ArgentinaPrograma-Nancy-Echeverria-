@@ -17,7 +17,19 @@
   margin-top: 10px;
 }
 
-@media (max-width:600px) {
+.menu__redesSociales__lista{
+  padding: 0px;
+}
+
+@media(max-width:600px){
+  .menu{
+    width: 100%;
+  }
+
+@media (max-width:368px) {
+  .menu__redesSociales__lista{
+    padding: 0px;
+  }
   .menu{
     width:100%;
   }
@@ -31,6 +43,5 @@
   #linkedin{
     display: none;
   };
-
 }
-
+}
