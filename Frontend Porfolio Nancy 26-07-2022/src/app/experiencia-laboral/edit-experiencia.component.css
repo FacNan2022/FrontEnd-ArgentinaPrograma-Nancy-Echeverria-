@@ -1,103 +1,106 @@
 /*Efecto*/
 .modalmask {
-    position: fixed;
-    font-family: Arial, sans-serif;
-    top: 0;
-    right: 0;
+    background: rgba(0, 0, 0, 0.8);
     bottom: 0;
+    font-family: Arial, sans-serif;
     left: 0;
-    background: rgba(0,0,0,0.8);
-    z-index: 99999;
-    opacity:0;
-    -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
+    opacity: 0;
     pointer-events: none;
+    position: fixed;
+    right: 0;
+    transition: opacity 400ms ease-in;
+    top: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    z-index: 99999;
 }
+
 .modalmask:target {
-    opacity:1;
+    opacity: 1;
     pointer-events: auto;
 }
 
 /*Formato de la ventana*/
-.modalbox{
-    width: 400px;
-    position: relative;
-    padding: 5px 20px 13px 20px;
+.modalbox {
     background: #fff;
-    border-radius:3px;
-    -webkit-transition: all 500ms ease-in;
+    border-radius: 3px;
+    padding: 5px 20px 13px 20px;
+    position: relative;
     -moz-transition: all 500ms ease-in;
+    -webkit-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
-     
+    width: 400px;
 }
 
 /*Movimientos*/
 .movedown {
     margin: 0 auto;
 }
+
 .rotate {
     margin: 10% auto;
-    -webkit-transform: scale(-5,-5);
-    transform: scale(-5,-5);
+    transform: scale(-5, -5);
+    -webkit-transform: scale(-5, -5);
+
 }
+
 .resize {
+    height: 0;
     margin: 10% auto;
-    width:0;
-    height:0;
- 
+    width: 0;
 }
-.modalmask:target .movedown{       
-    margin:10% auto;
+
+.modalmask:target .movedown {
+    margin: 10% auto;
 }
-.modalmask:target .rotate{     
-    transform: rotate(360deg) scale(1,1);
-        -webkit-transform: rotate(360deg) scale(1,1);
+
+.modalmask:target .rotate {
+    transform: rotate(360deg) scale(1, 1);
+    -webkit-transform: rotate(360deg) scale(1, 1);
 }
- 
-.modalmask:target .resize{
-    width:400px;
-    height:200px;
+
+.modalmask:target .resize {
+    height: 200px;
+    width: 400px;
 }
 
 /*Boton de cerrar*/
 .close {
     background: #606061;
+    border-radius: 3px;
     color: #FFFFFF;
+    font-weight: bold;
     line-height: 25px;
     position: absolute;
     right: 1px;
     text-align: center;
+    text-decoration: none;
     top: 1px;
     width: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius:3px;
- 
-}
- 
-.close:hover {
-    background: #FAAC58;
-    color:#222;
 }
 
-.mat-card{
-    float:right;
- right:25%;
-   width:  50%;
-   height: 100%;
-   position:absolute;
+.close:hover {
+    background: #FAAC58;
+    color: #222;
 }
-@media(max-width:1200px){
-    .edicion{
-       padding: 10px;
-       position: relative;
-    }
-   .mat-card{
-    width: 94%;
-    right: 11px;
+
+.mat-card {
+    float: right;
+    height: 100%;
     position: absolute;
-   
-   }
- }
- 
+    right: 25%;
+    width: 50%;   
+}
+
+@media(max-width:1200px) {
+    .edicion {
+        padding: 10px;
+        position: relative;
+    }
+
+    .mat-card {
+        position: absolute;
+        right: 11px;
+        width: 94%;
+    }
+}

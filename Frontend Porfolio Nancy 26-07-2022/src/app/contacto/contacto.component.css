@@ -1,32 +1,28 @@
 
 .contacto{
-    height: 100vh;
     background-image: url(https://media.istockphoto.com/photos/digital-numbers-flowing-in-a-digital-high-tech-environment-picture-id1263886233?b=1&k=20&m=1263886233&s=170667a&w=0&h=Z77dVX0gEmJmZpae1WkzZbvpPgzeZj5-NdTEXKxBLRQ=);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    height: 100vh;
     margin: 0 auto;
     padding: 140px;
 }
 
 .contact {
-    max-width: 900px;
-    margin: 0px auto;
-    text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 20px;
     border: 2px solid #bbb;
-   
+    border-radius: 20px;
+    margin: 0px auto;
+    max-width: 900px;
+    padding: 20px;
+    text-align: center;  
 }
 
 .container p{
-    margin-top: 25%;
     font-size: 20px;
-    
-    
+    margin-top: 25%;   
 }
-
 
 h2.contact-title {
     color: var(--heading-sec-color);
@@ -34,19 +30,18 @@ h2.contact-title {
 }
 
 .email-link {
-    color: whitesmoke;
-    background-color: transparent;
-    padding: 1rem 1.75rem;
-    font-size: var(--f-md);
-    border-radius: 4px;
-    font-family: var(--text-font-family);
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
-    border: 2px solid;
     background: blue;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 4px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-family: var(--text-font-family);
+    font-size: var(--f-md);
+    line-height: 1;
+    padding: 1rem 1.75rem;
     padding: 0.7rem;
-    
+    text-decoration: none; 
 }
     a {
       text-align: center;
@@ -61,25 +56,22 @@ h2.contact-title {
 }
 
 .linkedin{
-    width: 30%;
-    height: 30vh;
     border: 2px solid red;
+    height: 30vh;
+    width: 30%;   
 }
 @media(max-width:800px){
     .contacto{
-        width:100%;
         position: relative;
-        
-    
+        width:100%;
     }
     section{
-        width: 100%;
-        position: absolute;
         left:0px;
+        position: absolute;
+        width: 100%; 
     }
     .contact{
-        width:100%;
-       
+        width:100%;  
     }
    
 }

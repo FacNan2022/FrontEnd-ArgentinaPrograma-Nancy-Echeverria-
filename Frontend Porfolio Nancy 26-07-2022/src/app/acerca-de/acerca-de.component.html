@@ -1,28 +1,26 @@
-<div class="fondo"@enterState>
+<div class="acercaDe" id="btn-sobreMi" @enterState>
 
-    <div id="Acerca-de-Mi">
-
-        <div class="foto-perfil">  
-          <img src="{{persona.img}}">
-
-          <button id="btnEdicion" *ngIf="isLogged" class="btn btn-light" routerLink="editpersona/{{persona.id}}">
-            <i class="bi bi-pencil-fill"></i> </button>
-
-            <div id="nombre">
-              <h1>{{persona.nombre}} {{persona.apellido}}</h1>
-              <p>{{persona.ubicacion}}</p>
-
-            </div>
-        
-            <div id="manoTransparente"><img src=".././../assets/robot-humano_53876-90440-removebg-preview.png" alt="" width="100%"></div>
+    <section class="acercaDe__informacion">   
+            <div class="acercaDe__informacion--biografia">
+              <h1>Acerca de mí</h1>
+              <p>{{persona.descripcion}}</p>
+            </div>    
+            <div class="acercaDe__informacion--perfil">
+              <div class="acercaDe__informacion--mano-transparente">
+                <img id="mano-transparente" src=".././../assets/robot-humano_53876-90440-removebg-preview.png" alt="" width="100%">
+              </div>
             
-        </div>
-        
-        <div class="informacion">
-          <h2>Acerca de mí</h2>
-          <p>{{persona.descripcion}}</p>
-        </div>
-</div>
+               <img id="foto-perfil" src="{{persona.img}}">
+            
+               <article class="info-perfil">
+               <button id="btnEdicion" class="btn btn-light" *ngIf="isLogged" routerLink="editpersona/{{persona.id}}">
+                <i class="bi bi-pencil-fill"></i> </button>
+                <h1>{{persona.nombre}}</h1>
+                <p>{{persona.ubicacion}}</p>
+               </article>
+               
+             </div>
+</section>
 
 <div class="animacion">
   <h1><strong>Lo imagine, lo programe</strong></h1>

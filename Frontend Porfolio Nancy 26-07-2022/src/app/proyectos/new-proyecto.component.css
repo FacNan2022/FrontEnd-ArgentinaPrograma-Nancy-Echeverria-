@@ -10,9 +10,8 @@
       position: relative;
    }
   .mat-card{
-   width: 94%;
-   right: 11px;
    position: absolute;
-  
+   right: 11px;
+   width: 94%;
   }
 }

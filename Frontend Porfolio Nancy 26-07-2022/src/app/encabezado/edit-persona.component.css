@@ -1,43 +1,46 @@
-.mat-card{
-    float:right;
- right:25%;
-   width:  50%
+.mat-card {
+   float: right;
+   right: 25%;
+   width: 50%
 }
-.container{
+
+.container {
    display: block;
 }
-#Cerrar{
-   position: absolute;
-   width: 100%;
+
+#Cerrar {
+   height: 10%;
+   left: 0;
    margin-bottom: 5px;
    margin: 0px;
-   height: 10%;
-   top: 5px;
-   left: 0;
-}
-#cancelar{
-  position: absolute;
-  right: 10px;
+   position: absolute;
+   top: 5px; 
+   width: 100%;
 }
 
-form{
+#cancelar {
+   position: absolute;
+   right: 10px;
+}
+
+form {
    margin-top: 50px;
-
 }
-label{
-   font-size: 15px;
+
+label {
    color: white;
+   font-size: 15px; 
 }
 
-@media(max-width:1200px){
-   .edicion{
+@media(max-width:1200px) {
+   .edicion {
       padding: 10px;
       position: relative;
    }
-  .mat-card{
-   width: 94%;
-   right: 11px;
-   position: absolute;
-  
-  }
+
+   .mat-card {
+      position: absolute;
+      right: 11px;
+      width: 94%;
+   }
 }

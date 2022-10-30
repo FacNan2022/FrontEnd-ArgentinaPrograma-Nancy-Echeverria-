@@ -1,107 +1,36 @@
-
-
-#menu {
-  height: 8vh;
-  background-color:#198754;
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #198754;
   position: fixed;
   z-index: 2;
-  width:100%;
- top:0%;
+  width: 100%;
+  padding: 0px 10px;
   transform: translate(-50% -50%);
 }
-.argentinaPrograma{
-  width: 15%;
-  height: 100%;
-  z-index: 1;
-  margin-left:5px;
-  padding: 2px;
+
+.menu__redesSociales__lista {
+  align-content: center;
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
 }
 
-.argentinaPrograma img{
-  width: 100%;
-  height: 100%;
-}
-
-#redesSociales {
-  background-color: blue;
-  right: 0;
-  top: 5px;
-}
-
-#facebook {
-  position: absolute;
-  right: 10%;
-  top: 8px;
-  border-radius: 50%;
-}
-
-#github {
-  position: absolute;
-  right: 11.7%;
-  top: 8px;
-  border-radius: 50%;
-  margin-left:10px;
-}
-
-#linkedin {
-  position: absolute;
-  right: 15.7%;
-  top: 9px;
-  border-radius: 5%;
-}
-
-#btnLogin {
-  right: 5px;
-  position: absolute;
-  top: 10px;
-  margin-right: 10px;
-}
-
-#Logo {
-  text-align: center;
-  margin-top: 20px;
-  border-radius: 50%;
-}
-
-#Logo img {
-  border-radius: 50%;
-  margin-bottom:5px;
-}
-
-@media (max-width:900px) {
-  #redesSociales{
+@media (max-width:600px) {
+  .menu{
+    width:100%;
+  }
+  #facebook{
+    display: none;
+  }
+  #github{
     display: none;
   }
 
-  .argentinaPrograma{
+  #linkedin{
     display: none;
-  }
+  };
 
-  #btnLogin{
-    left: 5px;
-    top: 5px;
-
-  }
-
- 
 }
 
-@media(max-width:1200px){
-  #redesSociales{
-    width: 50%;
-    height: 10vh;
-    right: 7%;
-    position: absolute;
-    background: inherit;
-    top: 0px;
-  }
-#facebook{
-  right: 12%;
-}
-#github{
-  right: 17.7%;
-}
-#linkedin{
-  right: 29.7%;
-}
-}

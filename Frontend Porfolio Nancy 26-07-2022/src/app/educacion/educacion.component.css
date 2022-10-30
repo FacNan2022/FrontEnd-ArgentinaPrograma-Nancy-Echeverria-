@@ -1,7 +1,7 @@
 .container {
-    padding: 0px 0px;
     display: flex;
     margin-top: 20px;
+    padding: 0px 0px; 
 }
 
 .tituloPrincipal strong{
@@ -21,8 +21,8 @@
         overflow: scroll;
     }
     .descripcion{
-        width:50%;
         overflow:auto;
+        width:50%;
     }
     #editar{
         position:fixed;
@@ -32,8 +32,9 @@
     }
 
     .tituloPrincipal{
-        position: relative;
         left:8px;
+        position: relative;
+        
     }
 }
 

@@ -1,31 +1,37 @@
-<nav id="menu">
-  <div class="argentinaPrograma">
-     <a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"> <img src="https://pbs.twimg.com/media/E8YoUlFWEAAeBu_.jpg" alt=""></a>
+<section class="menu">
+  <div class="menu__argentinaPrograma">
+    <a
+      href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa">
+      <img src="https://pbs.twimg.com/media/E8YoUlFWEAAeBu_.jpg" width="200px"></a>
   </div>
-  <a class="navbar-brand" href="#">
-    
 
-    <div id="redesSociales">
-      <a href="https://www.facebook.com/nancy.echeverria.56">
-        <img
-          src="../../assets/Logo Facebook.png"
-          width="50px" height="40px" id="facebook">
-      </a>
-      <a href="https://github.com/FacNan2022">
-        <img
-          src="../../assets/Logo Github.png"
-          width="80px" height="40px" id="github">
-      </a>
 
-      <a href="https://www.linkedin.com/in/nancy-echeverria-8b66ab23b/"><img id="linkedin"
-          src="../../assets/Logo Linkedin.png"
-          width="120px" height="40px"></a>
-    </div>
-    <div id="btnLogin">
-      <a href="/login"><button mat-raised-button color="primary" id="iniciarSesion" type="button" class="login"
+
+  <div class="menu__redesSociales">
+    <ul class="menu__redesSociales__lista">
+      <li class="menu__redesSociales__lista__item"><a href="https://www.facebook.com/nancy.echeverria.56">
+          <img src="../../assets/Logo Facebook.png" width="50px" height="40px" id="facebook">
+        </a></li>
+
+      <li class="menu__redesSociales__lista__item">
+        <a href="https://github.com/FacNan2022">
+          <img src="../../assets/Logo Github.png" width="80px" height="40px" id="github">
+        </a>
+      </li>
+
+      <li class="menu__redesSociales__lista__item">
+        <a href="https://www.linkedin.com/in/nancy-echeverria-8b66ab23b/"><img id="linkedin"
+            src="../../assets/Logo Linkedin.png" width="120px" height="40px"></a>
+      </li>
+      <li class="menu__redesSociales__lista__item">
+        <a href="/login"><button mat-raised-button color="primary" id="iniciarSesion" type="button" class="login"
           (click)="login()" *ngIf="!isLogged">Iniciar Sesion</button></a>
-      <a href="/login"><button mat-raised-button color="primary" id="cerrarSesion" type="button" class="login"
+      </li>
+
+      <li class="menu__redesSociales__lista__item">
+        <a href="/login"><button mat-raised-button color="primary" id="cerrarSesion" type="button" class="login"
           (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button></a>
-    </div>
-  </a>
-</nav>
+      </li>
+    </ul>
+  </div>
+</section>

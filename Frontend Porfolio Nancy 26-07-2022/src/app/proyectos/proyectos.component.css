@@ -3,10 +3,9 @@
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzC86z0FXFXwEw_-ABH1Ob4yZCIxKZ3jH_yw&usqp=CAU);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: auto;
     border: solid 2px black;
-
+    height: auto;
+    width: 100%;
 }
 
 .tituloPrincipal strong{
@@ -14,21 +13,21 @@
 }
 
 .listaProyectos {
-    margin-top: 30px;
     display: flex;
-    width: 100%;
-    height: auto;
     flex-wrap: wrap;
+    height: auto;
+    margin-top: 30px;
+    width: 100%;
 }
 
 .proyecto {
-    width: 250px;
-    height: 50vh;
     background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 50vh;
     margin: 10px;
     position: relative;
-    border-radius: 10px;
     transition: 3s;
+    width: 250px;
 }
 
 .proyecto:hover{
@@ -36,11 +35,11 @@
 }
 
 .botones{
-    width: 100%;
     height: 4.6vh;
-    z-index: 1;
-    right: 0px;
     position: absolute;
+    right: 0px;
+    width: 100%;
+    z-index: 1;
 
 }
 .botones button{
@@ -64,51 +63,48 @@
 }
 
 .imagen img {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 .info-proyecto {
-    
-    overflow: scroll;
-    padding: 10px;
     border: 2px solid blue;
+    color: white;
+    height: 140px;
     margin: 0px 10px;
     margin-top: 0px;
-    height: 140px;
-    text-align: center;
-    color: white;
+    overflow: scroll;
+    padding: 10px;
+    text-align: center; 
 }
 @media(max-width:900px){
     .proyectos{
         height: auto;
         overflow: scroll;
       
-    
     }
     .listaProyectos{
         display:inline;
         height:auto;
-        width: 100%;
-       
+        width: 100%;  
     }
 
     .proyecto{
-        width:300px;
-        position:relative;
-        margin-top: 10px;
-        top:30px;
         left:20px;
+        margin-top: 10px;
+        position:relative;
+        top:30px;
+        width:300px;  
     }
 
     .btn-dark {
-        position: absolute;
-        right: 0px;
         margin: 20px 20px;
+        position: absolute;
+        right: 0px;   
     }
     .tituloPrincipal{
-        position: relative;
         left:113px;
+        position: relative;
     }
 }
 
