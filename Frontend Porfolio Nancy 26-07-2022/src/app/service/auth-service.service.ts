@@ -8,7 +8,7 @@ import { LoginUsuario } from '../Model/login-usuario';
   providedIn: 'root'
 })
 export class AuthServiceService {
-  authURL = 'https://bakendargentinaprograma.herokuapp.com/auth/';
+  authURL = 'https://backend-argentina-programa-mycr.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 

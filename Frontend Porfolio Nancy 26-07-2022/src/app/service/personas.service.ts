@@ -11,7 +11,7 @@ import { PersonaEdit } from '../Model/PersonaEdit';
 
 export class PersonaService {
   [x: string]: any;
-  URL = 'https://bakendargentinaprograma.herokuapp.com/personas/';
+  URL = 'https://backend-argentina-programa-mycr.onrender.com/personas/';
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<PersonaEdit[]> {

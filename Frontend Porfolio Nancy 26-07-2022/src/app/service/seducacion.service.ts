@@ -8,7 +8,7 @@ import { Educacion } from '../Model/educacion';
 })
 export class SEducacionService {
   [x: string]: any;
-  URL = ' https://bakendargentinaprograma.herokuapp.com/edu/';
+  URL = ' https://backend-argentina-programa-mycr.onrender.com/edu/';
 
   constructor(private httpClient: HttpClient) { }
 
